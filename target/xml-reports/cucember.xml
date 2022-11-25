@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.075">
+    <testcase classname="Registration" name="sign up a new user on gootickets.com" time="21.733">
+        <system-out>
+            <![CDATA[Given user is on the sign up page...........................................passed
+And user selects the gender.................................................passed
+Then user enters firstname and lastname as "Andrew" and "Ryan"..............passed
+And user provides email as "aryan@gmail.com"................................passed
+When user enters the password as "aryan@123"................................passed
+And user confirms the new password as "aryan@123"...........................passed
+Then user clicks on general terms and conditions radio button...............passed
+And user clicks on create your account button and sees the message as "Welcome to your account dashboard".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
