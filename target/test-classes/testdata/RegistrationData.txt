@@ -9,3 +9,4 @@ SignUpPojo{firstname='Mel', lastname='Heathcote', email='MelHeathcote@gmail.com'
 SignUpPojo{firstname='Dreama', lastname='Roberts', email='DreamaRoberts@gmail.com', password='%01O7D^jN$MUN65tHU'}
 SignUpPojo{firstname='Angelo', lastname='Little', email='AngeloLittle@gmail.com', password='#wwBvb8oWs624^4f6H'}
 SignUpPojo{firstname='Kasey', lastname='McClure', email='KaseyMcClure@gmail.com', password='FQxToMKq^z1Il5*FZk'}
+SignUpPojo{firstname='Leola', lastname='Erdman', email='LeolaErdman@gmail.com', password='q#9@^Hx^69E26#@H7G'}

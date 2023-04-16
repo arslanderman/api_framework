@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-        tags = "@Signup",
+        tags = "@find_all_tag_groups",
         dryRun = false
 
 )
