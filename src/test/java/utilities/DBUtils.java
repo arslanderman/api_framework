@@ -1,12 +1,15 @@
 package utilities;
 
+
+
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DBUtils {
+public class  DBUtils {
 
     private static Connection connection;
     private static Statement statement;
@@ -14,11 +17,12 @@ public class DBUtils {
     /**
      * DBUtils.createConnection(); -> to connect to teh database
      */
-    public static void createConnection() {
+    public static void createConnection() throws  SQLException {
+
         //    connection : used to connect to DB
         //    statement : used to write queries
         //    resultSet : used to perform DB actions such as going to specific rows, get data as string, get data as object
-        String url = "jdbc:mysql://localhost:8181/prestashop";
+        String url = "jdbc:mysql://localhost:4407/prestashop";
         String username="prestashop";
         String password="prestashop";
         try {
@@ -27,6 +31,10 @@ public class DBUtils {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
+
+
+
     }
     /**
      * DBUtils.executeQuery(String query); -> Execute the query and store is the result set object
@@ -82,7 +90,7 @@ public class DBUtils {
      *         results in multiple rows and/or columns of data, only first row will
      *         be returned. The rest of the data will be ignored
      */
-    public static List<Object> getRowList(String query) {
+    public static List<Object> getRowList(String query)  {
         return getQueryResultList(query).get(0);
     }
     /**
@@ -90,7 +98,7 @@ public class DBUtils {
      *         name. If the query results in multiple rows and/or columns of data,
      *         only first row will be returned. The rest of the data will be ignored
      */
-    public static Map<String, Object> getRowMap(String query) {
+    public static Map<String, Object> getRowMap(String query)   {
         return getQueryResultMap(query).get(0);
     }
     /**
@@ -186,6 +194,14 @@ public class DBUtils {
 
         }
         return extratedData;
+    }
+
+    public static void main(String[] args) throws SQLException {
+        createConnection();
+        String query = "select * from core_tag";
+        List<Object> data = getColumnData(query,"name");
+        System.out.println(data);
+
     }
 
 

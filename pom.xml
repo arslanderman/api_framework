@@ -74,7 +74,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
+            <version>8.0.33</version>
         </dependency>
 
 
@@ -120,6 +120,14 @@
             <artifactId>jackson-datatype-jdk8</artifactId>
             <version>2.9.8</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.55</version>
+        </dependency>
+
 
     </dependencies>
 

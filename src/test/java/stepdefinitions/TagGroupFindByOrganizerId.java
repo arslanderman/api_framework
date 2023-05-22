@@ -40,6 +40,7 @@ public class TagGroupFindByOrganizerId extends AudienceManagementBaseURL {
     FindAllListPojo expected;
     FindAllListPojo expected1;
     TagAndTagGroupPojo expectedpojo;
+    List<Object> name;
 
     //FindAllListPojo actual1;
 
@@ -54,7 +55,7 @@ public class TagGroupFindByOrganizerId extends AudienceManagementBaseURL {
     @When("user sends post request for listing tag groups with non existing organizer")
     public void user_sends_post_request_for_listing_tag_groups_with_non_existing_organizer() {
      response = given().spec(spec).headers(headers).body(requestBody).when().post("/{first}/{second}/{third}/{fourth}");
-     response.prettyPrint();
+     response.prettyPrint(); //tag needs to be changed from hooks for header
 
     }
     @Then("user validates organizer not found error for listing tag groups")
@@ -107,11 +108,19 @@ public class TagGroupFindByOrganizerId extends AudienceManagementBaseURL {
 
         System.out.println("actual data "+actual);
        // System.out.println(expected.getData().get(0));
-        System.out.println(actual.getData().get(2));
+        //System.out.println(actual.getData().get(2));
         boolean flag;
         for(int i = 0; i < actual.getData().size(); i++ ){
             Map<String,String> map = new HashMap<>((Map) actual.getData().get(i));
             Map<String,String> map1 = new HashMap<>((Map) expected.getData().get(0));
+            name = new ArrayList<>();
+            /*
+            for(int j = 0; j < actual.getData().size(); j++){
+                name.add(map.get("name"));
+            }
+
+             */
+
             System.out.println("name " + (i+1) +" : "+map.get("name"));
             if(map.get("name").equals(map1.get("name"))){
                 flag = true;
@@ -120,8 +129,14 @@ public class TagGroupFindByOrganizerId extends AudienceManagementBaseURL {
             }
 
         }
+        for(Object w : actual.getData()){
+            Map<String,String> map2 = new HashMap<>((Map) w);
+            name.add(map2.get("name"));
+        }
+        System.out.println(name);
 
-        saveDataTagGroups(actual);
+
+       // saveDataTagGroups(actual);
 
     }
     @Then("user validates all tag groups those archived")
