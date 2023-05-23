@@ -54,7 +54,7 @@
 
       Given user creates request body with non existing parent_id for uppate ep
       When  user sends post request for tag group update with non existing parent_id
-      Then  user validates parent group not found error with "409" status code
+      Then  user validates parent group not found error with "404" status code
 
     Scenario: tag group update when parent group does not link to organizer
 

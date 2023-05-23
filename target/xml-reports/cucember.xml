@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="3.15">
-    <testcase classname="Tag Group Update" name="tag group update with non existing organizer" time="1.676">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="3.828">
+    <testcase classname="Tag Group Update" name="tag group update with non existing organizer" time="1.148">
         <system-out>
             <![CDATA[Given user creates request body for tag group update with non existing organizer.passed
 When user sends post request for tag group update with non existing organizer.passed
@@ -8,7 +8,7 @@ Then user validates organizer not found error for tag group update with "404" st
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when tag group does not exist" time="0.202">
+    <testcase classname="Tag Group Update" name="tag group update when tag group does not exist" time="0.179">
         <system-out>
             <![CDATA[Given user creates request body with non existing tag group.................passed
 When When user sends post request with non existing tag group...............passed
@@ -16,7 +16,7 @@ Then user validates tag group not found error with "404" status code........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when tag group does not link to organizer" time="0.199">
+    <testcase classname="Tag Group Update" name="tag group update when tag group does not link to organizer" time="0.179">
         <system-out>
             <![CDATA[Given user creates request body for tag group update which is not linked to organizer.passed
 When When user sends post request with tag group update request body is not linked to organizer.passed
@@ -24,7 +24,7 @@ Then user validates tag group is not linked to organizer error with "409" status
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when tag group is archived" time="0.195">
+    <testcase classname="Tag Group Update" name="tag group update when tag group is archived" time="0.178">
         <system-out>
             <![CDATA[Given user creates request body for with archived tag group.................passed
 When user sends post request with archived tag group........................passed
@@ -32,7 +32,7 @@ Then user validates tag group is archived error with "409" status code for updat
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when name already exist for organizer" time="0.22">
+    <testcase classname="Tag Group Update" name="tag group update when name already exist for organizer" time="0.18">
         <system-out>
             <![CDATA[Given user creates request body with existing name for organizer............passed
 When user sends post request for tag group update with existing name........passed
@@ -40,7 +40,7 @@ Then user validates name already exist error for update ep with "409" status cod
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update with archived name for organizer" time="0.384">
+    <testcase classname="Tag Group Update" name="tag group update with archived name for organizer" time="0.357">
         <system-out>
             <![CDATA[Given user creates request body with archived name for organizer............passed
 When user sends post request for tag group update with archived name........passed
@@ -48,35 +48,15 @@ Then user validates tag group update with empty response with "204" status code.
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent id is null" time="0.019">
-        <failure message="object cannot be null" type="java.lang.IllegalArgumentException">
+    <testcase classname="Tag Group Update" name="tag group update when parent id is null" time="0.347">
+        <system-out>
             <![CDATA[Given user creates request body for tag group update without parent_id......passed
 When user sends post request for tag group update without parent_id.........passed
-Then user validates tag group update with empty response with "204" status code.failed
-
-StackTrace:
-java.lang.IllegalArgumentException: object cannot be null
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:746)
-	at stepdefinitions.TagGroupUpdateStepDefs.user_validates_tag_group_update_with_empty_response_with_status_code(TagGroupUpdateStepDefs.java:173)
-	at ✽.user validates tag group update with empty response with "204" status code(file:///Users/arslan/Documents/aderman/intellj%20projects/pg_core_api/./src/test/resources/features/tag_group_update.feature:45)
+Then user validates tag group update with empty response with "204" status code.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent id and tag id are same" time="0.004">
+    <testcase classname="Tag Group Update" name="tag group update when parent id and tag id are same" time="0.171">
         <system-out>
             <![CDATA[Given user creates request body with same parent_id and tag_group_id........passed
 When user sends post request for tag group update with same parent_id and tag_group_id.passed
@@ -84,15 +64,15 @@ Then user validates parent_id and id can not be same error with "409" status cod
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent group does not exist" time="0.002">
+    <testcase classname="Tag Group Update" name="tag group update when parent group does not exist" time="0.177">
         <system-out>
             <![CDATA[Given user creates request body with non existing parent_id for uppate ep...passed
 When user sends post request for tag group update with non existing parent_id.passed
-Then user validates parent group not found error with "409" status code.....passed
+Then user validates parent group not found error with "404" status code.....passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent group does not link to organizer" time="0.001">
+    <testcase classname="Tag Group Update" name="tag group update when parent group does not link to organizer" time="0.185">
         <system-out>
             <![CDATA[Given user creates request body with parent_id which has not link to organizer for uppate ep.passed
 When user sends post request for tag group update with parent_id which has not link to organizer.passed
@@ -100,7 +80,7 @@ Then user validates parent group is not link to organizer error with "409" statu
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent group is archived" time="0.001">
+    <testcase classname="Tag Group Update" name="tag group update when parent group is archived" time="0.169">
         <system-out>
             <![CDATA[Given user creates request body for with archived parent group for update ep.passed
 When user sends post request with archived parent group for update ep.......passed
@@ -108,28 +88,12 @@ Then user validates parent group is archived error with "409" status code for up
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update" time="0.003">
-        <failure message="object cannot be null" type="java.lang.IllegalArgumentException">
+    <testcase classname="Tag Group Update" name="tag group update" time="0.356">
+        <system-out>
             <![CDATA[Given user creates request body for update ep...............................passed
 When user sends post request for tag group update...........................passed
-Then user validates tag group update with empty response with "204" status code.failed
-
-StackTrace:
-java.lang.IllegalArgumentException: object cannot be null
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:746)
-	at stepdefinitions.TagGroupUpdateStepDefs.user_validates_tag_group_update_with_empty_response_with_status_code(TagGroupUpdateStepDefs.java:173)
-	at ✽.user validates tag group update with empty response with "204" status code(file:///Users/arslan/Documents/aderman/intellj%20projects/pg_core_api/./src/test/resources/features/tag_group_update.feature:75)
+Then user validates tag group update with empty response with "204" status code.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
