@@ -1,98 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="3.828">
-    <testcase classname="Tag Group Update" name="tag group update with non existing organizer" time="1.148">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="3.219">
+    <testcase classname="Tag Group Delete" name="tag group delete with non existing organizer" time="1.447">
         <system-out>
-            <![CDATA[Given user creates request body for tag group update with non existing organizer.passed
-When user sends post request for tag group update with non existing organizer.passed
-Then user validates organizer not found error for tag group update with "404" status code.passed
+            <![CDATA[Given user creates request body for tag group delete with non existing organizer.passed
+When user sends post request for tag group delete with non existing organizer.passed
+Then user validates organizer not found error for tag group delete with "404" status code.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when tag group does not exist" time="0.179">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group does not exist" time="0.192">
         <system-out>
-            <![CDATA[Given user creates request body with non existing tag group.................passed
-When When user sends post request with non existing tag group...............passed
-Then user validates tag group not found error with "404" status code........passed
+            <![CDATA[Given user creates request body with non existing tag group for delete ep...passed
+When When user sends post request with non existing tag group for delete ep.passed
+Then user validates tag group not found error with "404" status code for delete ep.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when tag group does not link to organizer" time="0.179">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group does not link to organizer" time="0.199">
         <system-out>
-            <![CDATA[Given user creates request body for tag group update which is not linked to organizer.passed
-When When user sends post request with tag group update request body is not linked to organizer.passed
-Then user validates tag group is not linked to organizer error with "409" status code for update ep.passed
+            <![CDATA[Given user creates request body for tag group delete which is not linked to organizer.passed
+When user sends post request which is not linked to organizer for delete ep.passed
+Then user validates tag group is not linked to organizer error with "409" status code for delete ep.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when tag group is archived" time="0.178">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group is archived" time="0.197">
         <system-out>
-            <![CDATA[Given user creates request body for with archived tag group.................passed
-When user sends post request with archived tag group........................passed
-Then user validates tag group is archived error with "409" status code for update ep.passed
+            <![CDATA[Given user creates request body with archived tag group for delete ep.......passed
+When user sends post request for delete ep..................................passed
+Then user validates tag group is archived error with "409" status code for delete ep.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when name already exist for organizer" time="0.18">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group is not archived" time="0.206">
         <system-out>
-            <![CDATA[Given user creates request body with existing name for organizer............passed
-When user sends post request for tag group update with existing name........passed
-Then user validates name already exist error for update ep with "409" status code.passed
+            <![CDATA[Given user creates request body with not archived tag group for delete ep...passed
+When user sends post request for delete ep with not archived tag group......passed
+Then user validates tag group delete with empty response with "204" status code.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update with archived name for organizer" time="0.357">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group link to at least one tag those not archived" time="0.189">
         <system-out>
-            <![CDATA[Given user creates request body with archived name for organizer............passed
-When user sends post request for tag group update with archived name........passed
-Then user validates tag group update with empty response with "204" status code.passed
+            <![CDATA[Given user creates request body with tag group which has link to at least one tag those not archived.passed
+When user sends post request with tag group that has link to at least one tag.passed
+Then user validates tag group linked to tag not archived error with "409" status code.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent id is null" time="0.347">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group link to one tag those archived" time="0.189">
         <system-out>
-            <![CDATA[Given user creates request body for tag group update without parent_id......passed
-When user sends post request for tag group update without parent_id.........passed
-Then user validates tag group update with empty response with "204" status code.passed
+            <![CDATA[Given user creates request body with tag group which has link to at least one tag those archived.passed
+When user sends post request with tag group that has link to at least one tag which is archived.passed
+Then user validates  empty response with "204" status code with linked archived tag.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent id and tag id are same" time="0.171">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group link to child group those not archived" time="0.188">
         <system-out>
-            <![CDATA[Given user creates request body with same parent_id and tag_group_id........passed
-When user sends post request for tag group update with same parent_id and tag_group_id.passed
-Then user validates parent_id and id can not be same error with "409" status code.passed
+            <![CDATA[Given user creates request body with tag group which has link to at least one child tag group those not archived.passed
+When user sends post request with tag group which has link to at least one child tag group those not archived.passed
+Then user validates tag group linked to group not archived error with "409" status code.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent group does not exist" time="0.177">
+    <testcase classname="Tag Group Delete" name="tag group delete when tag group link to child group those archived" time="0.187">
         <system-out>
-            <![CDATA[Given user creates request body with non existing parent_id for uppate ep...passed
-When user sends post request for tag group update with non existing parent_id.passed
-Then user validates parent group not found error with "404" status code.....passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent group does not link to organizer" time="0.185">
-        <system-out>
-            <![CDATA[Given user creates request body with parent_id which has not link to organizer for uppate ep.passed
-When user sends post request for tag group update with parent_id which has not link to organizer.passed
-Then user validates parent group is not link to organizer error with "409" status code for update ep.passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Tag Group Update" name="tag group update when parent group is archived" time="0.169">
-        <system-out>
-            <![CDATA[Given user creates request body for with archived parent group for update ep.passed
-When user sends post request with archived parent group for update ep.......passed
-Then user validates parent group is archived error with "409" status code for update ep.passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Tag Group Update" name="tag group update" time="0.356">
-        <system-out>
-            <![CDATA[Given user creates request body for update ep...............................passed
-When user sends post request for tag group update...........................passed
-Then user validates tag group update with empty response with "204" status code.passed
+            <![CDATA[Given user creates request body with tag group which has link to at least one child tag group those archived.passed
+When user sends post request with tag group which has link to at least one child tag group those archived.passed
+Then user validates  empty response with "204" status code with linked archived tag group.passed
 ]]>
         </system-out>
     </testcase>
