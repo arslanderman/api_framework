@@ -17,14 +17,19 @@ import pojo.ResponseTagAndTagGroupPojo;
 import pojo.TagAndTagGroupPojo;
 import pojo.TagAndTagGroupResponseDataPositive;
 import utilities.ConfigReader;
+import utilities.DBUtils;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
 import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 import static java.util.function.Predicate.not;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.Matchers.hasValue;
+import static utilities.DBUtils.createConnection;
+import static utilities.DBUtils.getColumnData;
 
 public class TagGroupUpdateStepDefs extends AudienceManagementBaseURL {
 
@@ -90,9 +95,18 @@ public class TagGroupUpdateStepDefs extends AudienceManagementBaseURL {
     }
 
     @Given("user creates request body for tag group update which is not linked to organizer")
-    public void user_creates_request_body_for_tag_group_update_which_is_not_linked_to_organizer() {
-        requestBody = new TagAndTagGroupPojo(132,"05dd3509-e225-4e2a-92d8-605f841353cc","blossom",
-                "0b9cfb35-1aba-4e0a-abdd-2a51bc944567",null,null,null);
+    public void user_creates_request_body_for_tag_group_update_which_is_not_linked_to_organizer() throws SQLException {
+        createConnection();
+        String query = "select * from core_tag_group where organizer_id = '132'";
+        List<Object> data = getColumnData(query, "name");
+        System.out.println("names for 132 "+data);
+        String name = "Lucas";
+        if (data.contains(name)) {
+            System.out.println("name already exist for this organizer please provide another name");
+        } else {
+            requestBody = new TagAndTagGroupPojo(132, "05dd3509-e225-4e2a-92d8-605f841353cc", name,
+                    "0b9cfb35-1aba-4e0a-abdd-2a51bc944567", null, null, null);
+        }
     }
     @When("When user sends post request with tag group update request body is not linked to organizer")
     public void when_user_sends_post_request_with_tag_group_update_request_body_is_not_linked_to_organizer() {

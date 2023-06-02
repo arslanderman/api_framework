@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 24, 2023 09:25:26 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 2, 2023 12:28:30 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 24, 2023 09:25:26 AM</h3>
+<h3>Jun 2, 2023 12:28:30 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 24, 2023 09:25:29 AM</h3>
+<h3>Jun 2, 2023 12:28:32 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>9</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>27</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Tag Group Delete":3.036
+"Tag Create":1.938
 };
 </script>
 <div class="row">
@@ -172,8 +172,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tag_group_delete</td>
-<td>9</td>
+<td>@tag_create_dyn</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -207,13 +207,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 9,
+passChild: 1,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 27,
+passGrandChild: 3,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tag_group_delete</a>
+<a class="dropdown-item" href="#">@tag_create_dyn</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Tag Group Delete</p>
+            <p class="name">Tag Create</p>
             <p class="text-sm">
-              <span>9:25:26 AM</span> / <span>00:00:03:036</span>
+              <span>12:28:30 PM</span> / <span>00:00:01:938</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Tag Group Delete</h5>
-<span class='badge badge-success'>05.24.2023 9:25:26 AM</span>
-<span class='badge badge-danger'>05.24.2023 9:25:29 AM</span>
-<span class='badge badge-default'>00:00:03:036</span>
+<h5 class="test-status text-pass">Tag Create</h5>
+<span class='badge badge-success'>06.02.2023 12:28:30 PM</span>
+<span class='badge badge-danger'>06.02.2023 12:28:32 PM</span>
+<span class='badge badge-default'>00:00:01:938</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,231 +274,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>tag group delete with non existing organizer</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>tag create with all scenerios</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_for_tag_group_delete_with_non_existing_organizer()">
-                <span>Given user creates request body for tag group delete with non existing organizer</span>
+              <div class="step pass-bg" title="stepdefinitions.TagCreateDynStepDefs.user_creates_request_for_tag_creation()">
+                <span>Given user creates request for tag creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_for_tag_group_delete_with_non_existing_organizer()">
-                <span>When user sends post request for tag group delete with non existing organizer</span>
+              <div class="step pass-bg" title="stepdefinitions.TagCreateDynStepDefs.user_sends_post_request_for_dynamic_tag_creation()">
+                <span>When user sends post request for dynamic tag creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_organizer_not_found_error_for_tag_group_delete_with_status_code(java.lang.String)">
-                <span>Then user validates organizer not found error for tag group delete with "404" status code</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group does not exist</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_with_non_existing_tag_group_for_delete_ep()">
-                <span>Given user creates request body with non existing tag group for delete ep</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.when_user_sends_post_request_with_non_existing_tag_group_for_delete_ep()">
-                <span>When When user sends post request with non existing tag group for delete ep</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_tag_group_not_found_error_with_status_code_for_delete_ep(java.lang.String)">
-                <span>Then user validates tag group not found error with "404" status code for delete ep</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group does not link to organizer</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_for_tag_group_delete_which_is_not_linked_to_organizer()">
-                <span>Given user creates request body for tag group delete which is not linked to organizer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_which_is_not_linked_to_organizer_for_delete_ep()">
-                <span>When user sends post request which is not linked to organizer for delete ep</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_tag_group_is_not_linked_to_organizer_error_with_status_code_for_delete_ep(java.lang.String)">
-                <span>Then user validates tag group is not linked to organizer error with "409" status code for delete ep</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group is archived</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_with_archived_tag_group_for_delete_ep()">
-                <span>Given user creates request body with archived tag group for delete ep</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_for_delete_ep()">
-                <span>When user sends post request for delete ep</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_tag_group_is_archived_error_with_status_code_for_delete_ep(java.lang.String)">
-                <span>Then user validates tag group is archived error with "409" status code for delete ep</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group is not archived</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_with_not_archived_tag_group_for_delete_ep()">
-                <span>Given user creates request body with not archived tag group for delete ep</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_for_delete_ep_with_not_archived_tag_group()">
-                <span>When user sends post request for delete ep with not archived tag group</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_tag_group_delete_with_empty_response_with_status_code(java.lang.String)">
-                <span>Then user validates tag group delete with empty response with "204" status code</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group link to at least one tag those not archived</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_with_tag_group_which_has_link_to_at_least_one_tag_those_not_archived()">
-                <span>Given user creates request body with tag group which has link to at least one tag those not archived</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_with_tag_group_that_has_link_to_at_least_one_tag()">
-                <span>When user sends post request with tag group that has link to at least one tag</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_tag_group_linked_to_tag_not_archived_error_with_status_code(java.lang.String)">
-                <span>Then user validates tag group linked to tag not archived error with "409" status code</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group link to one tag those archived</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_with_tag_group_which_has_link_to_at_least_one_tag_those_archived()">
-                <span>Given user creates request body with tag group which has link to at least one tag those archived</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_with_tag_group_that_has_link_to_at_least_one_tag_which_is_archived()">
-                <span>When user sends post request with tag group that has link to at least one tag which is archived</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_empty_response_with_status_code_with_linked_archived_tag(java.lang.String)">
-                <span>Then user validates  empty response with "204" status code with linked archived tag</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group link to child group those not archived</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_with_tag_group_which_has_link_to_at_least_one_child_tag_group_those_not_archived()">
-                <span>Given user creates request body with tag group which has link to at least one child tag group those not archived</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_with_tag_group_which_has_link_to_at_least_one_child_tag_group_those_not_archived()">
-                <span>When user sends post request with tag group which has link to at least one child tag group those not archived</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_tag_group_linked_to_group_not_archived_error_with_status_code(java.lang.String)">
-                <span>Then user validates tag group linked to group not archived error with "409" status code</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>tag group delete when tag group link to child group those archived</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_creates_request_body_with_tag_group_which_has_link_to_at_least_one_child_tag_group_those_archived()">
-                <span>Given user creates request body with tag group which has link to at least one child tag group those archived</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_sends_post_request_with_tag_group_which_has_link_to_at_least_one_child_tag_group_those_archived()">
-                <span>When user sends post request with tag group which has link to at least one child tag group those archived</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.TagGroupDeleteStepDefs.user_validates_empty_response_with_status_code_with_linked_archived_tag_group(java.lang.String)">
-                <span>Then user validates  empty response with "204" status code with linked archived tag group</span>
+              <div class="step pass-bg" title="stepdefinitions.TagCreateDynStepDefs.user_validates_tag_creation_with_a_new_row_on_db()">
+                <span>Then user validates tag creation with a new row on db</span>
       <div>
       </div>
               </div>
@@ -528,15 +320,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>9</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tag_group_delete</p>
-<p class="duration text-sm">9 tests</p>
+<p class="name">@tag_create_dyn</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tag_group_delete</h4>
-<span status="pass" class='badge log pass-bg'>9 passed</span>
+<h4>@tag_create_dyn</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -549,91 +341,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:26 AM</td>
+<td>12:28:30 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>tag group delete with non existing organizer</a>
+<a href="#" class="linked" test-id='1' id='2'>tag create with all scenerios</a>
 <div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete with non existing organizer</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>tag group delete when tag group does not exist</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group does not exist</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>tag group delete when tag group does not link to organizer</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group does not link to organizer</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='17'>tag group delete when tag group is archived</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group is archived</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='22'>tag group delete when tag group is not archived</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group is not archived</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:29 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='27'>tag group delete when tag group link to at least one tag those not archived</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group link to at least one tag those not archived</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:29 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>tag group delete when tag group link to one tag those archived</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group link to one tag those archived</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:29 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='37'>tag group delete when tag group link to child group those not archived</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group link to child group those not archived</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:29 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='42'>tag group delete when tag group link to child group those archived</a>
-<div class="">
-<span class="badge badge-default">Tag Group Delete.tag group delete when tag group link to child group those archived</span>
+<span class="badge badge-default">Tag Create.tag create with all scenerios</span>
 </div>
 </td>
 </tr>

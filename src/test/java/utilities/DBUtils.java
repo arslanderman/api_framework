@@ -22,7 +22,7 @@ public class  DBUtils {
         //    connection : used to connect to DB
         //    statement : used to write queries
         //    resultSet : used to perform DB actions such as going to specific rows, get data as string, get data as object
-        String url = "jdbc:mysql://localhost:4407/prestashop";
+        String url = "jdbc:mysql://localhost:8181/prestashop";
         String username="prestashop";
         String password="prestashop";
         try {
@@ -191,6 +191,17 @@ public class  DBUtils {
         List<Object> columnData = getColumnData(query,columnname);
         for (int i = 0; i < columnData.size(); i++) {
             extratedData.add(columnData.get(i).toString());
+
+        }
+        return extratedData;
+    }
+
+    public static List<Integer> getColumnDataAsInteger(String query,String columnname){
+
+        List<Integer> extratedData = new ArrayList<>();
+        List<Object> columnData = getColumnData(query,columnname);
+        for (int i = 0; i < columnData.size(); i++) {
+            extratedData.add(Integer.parseInt(columnData.get(i).toString()));
 
         }
         return extratedData;
