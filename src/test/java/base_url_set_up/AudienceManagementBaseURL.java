@@ -10,7 +10,7 @@ public class AudienceManagementBaseURL {
 
     public void audienceManagementSetUp(){
 
-        spec = new RequestSpecBuilder().setBaseUri("http://151.80.82.81").build();
+        spec = new RequestSpecBuilder().setBaseUri("http://178.32.169.19").build();
 
 
 

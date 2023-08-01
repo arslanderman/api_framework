@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.071">
-    <testcase classname="Tag Create" name="tag create with all scenerios" time="1.98">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.769">
+    <testcase classname="tag group create" name="tag group create with all scenarios" time="1.669">
         <system-out>
-            <![CDATA[Given user creates request for tag creation.................................passed
-When user sends post request for dynamic tag creation.......................passed
-Then user validates tag creation with a new row on db.......................passed
+            <![CDATA[Given user creates request for tag group creation...........................passed
+When user sends post request for dynamic tag group creation.................passed
+Then user validates dynamic tag group creation..............................passed
 ]]>
         </system-out>
     </testcase>

@@ -28,7 +28,7 @@ public class TagCreateDynStepDefs extends AudienceManagementBaseURL {
     TagAndTagGroupPojo requestBody;
     ResponseTagAndTagGroupPojo responseBody;
     ResponseTagAndTagGroupPojo actualData;
-    TagAndTagGroupResponseDataPositive actualDataWithTagID;
+    TagAndTagGroupResponseDataPositive actualDataWithTag_or_TagGroup_ID;
     Response response;
     ObjectMapper obj = new ObjectMapper();
     int i = Integer.parseInt(ConfigReader.getProperty("org_id"));
@@ -53,6 +53,7 @@ public class TagCreateDynStepDefs extends AudienceManagementBaseURL {
     @When("user sends post request for dynamic tag creation")
     public void user_sends_post_request_for_dynamic_tag_creation() {
         response = given().spec(spec).headers(headers).body(requestBody).when().post("/{first}/{second}/{third}");
+        response.prettyPrint();
     }
     @Then("user validates tag creation with a new row on db")
     public void user_validates_tag_creation_with_a_new_row_on_db() throws SQLException, IOException {
@@ -63,7 +64,6 @@ public class TagCreateDynStepDefs extends AudienceManagementBaseURL {
         List<Object> listOfTagGroupsWithOrg = getColumnData(ConfigReader.getProperty("query_tag_group"),"id");
         List<Object> listOfUnarchivedTagGroups = getColumnData(ConfigReader.getProperty("query_not_archived_tag_group"),"id");
         List<Object> listOfUnarchivedTagNames = getColumnData(ConfigReader.getProperty("query_existing_tag_names"),"name");
-        List<Object> listOfNamesNotArchived = getColumnData(ConfigReader.getProperty("query_existing_names"),"name");
 
         if(!listOfOrganizers.contains(Integer.parseInt(ConfigReader.getProperty("org_id")))){
                 responseBody = new ResponseTagAndTagGroupPojo(ConfigReader.getProperty("error_code"), ConfigReader.getProperty("concept"),
@@ -101,7 +101,7 @@ public class TagCreateDynStepDefs extends AudienceManagementBaseURL {
                Assert.assertEquals(response.getStatusCode(),j);
                System.out.println("error : tag group is archived!");
 
-        } else if (listOfNamesNotArchived.contains(ConfigReader.getProperty("name"))) {
+        } else if (listOfUnarchivedTagNames.contains(ConfigReader.getProperty("name"))) {
                responseBody = new ResponseTagAndTagGroupPojo(ConfigReader.getProperty("error_code_name_exists"),
                     ConfigReader.getProperty("concept"),null,null);
                actualData = obj.readValue(response.asString(),ResponseTagAndTagGroupPojo.class);
@@ -110,8 +110,8 @@ public class TagCreateDynStepDefs extends AudienceManagementBaseURL {
                Assert.assertEquals(response.getStatusCode(),j);
                System.out.println("error : name already exists!");
         } else {
-                actualDataWithTagID = obj.readValue(response.asString(),TagAndTagGroupResponseDataPositive.class);
-                Assert.assertFalse(actualDataWithTagID.getData().getId().toString().isEmpty());
+                actualDataWithTag_or_TagGroup_ID = obj.readValue(response.asString(),TagAndTagGroupResponseDataPositive.class);
+                Assert.assertFalse(actualDataWithTag_or_TagGroup_ID.getData().getId().toString().isEmpty());
                 Assert.assertTrue(listOfUnarchivedTagNames.contains(ConfigReader.getProperty("name")));
                 Assert.assertEquals(response.getStatusCode(),z);
         }
