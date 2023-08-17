@@ -48,7 +48,7 @@ public class TagGroupCreateDynStepDefs extends AudienceManagementBaseURL {
         @When("user sends post request for dynamic tag group creation")
         public void user_sends_post_request_for_dynamic_tag_group_creation () throws SQLException {
 
-            response = given().spec(spec).headers(headers).body(requestBody).post("/{first}/{second}/{third}/{fourth}");
+            //response = given().spec(spec).headers(headers).body(requestBody).post("/{first}/{second}/{third}/{fourth}");
             //response.prettyPrint();
         }
         @Then("user validates dynamic tag group creation")
@@ -59,7 +59,7 @@ public class TagGroupCreateDynStepDefs extends AudienceManagementBaseURL {
             List<Object> listOfTagGroupsWithOrg = getColumnData(ConfigReader.getProperty("query_parent_tag_for_tag_group"), "id");
             List<Object> listOfUnarchivedTagGroups = getColumnData(ConfigReader.getProperty("query_not_archived_tag_group"), "id");
             List<Object> listOfUnarchivedTagGroupNames = getColumnData(ConfigReader.getProperty("query_existing_tag_group_names"), "name");
-            //response = given().spec(spec).headers(headers).body(requestBody).post("/{first}/{second}/{third}/{fourth}");
+            response = given().spec(spec).headers(headers).body(requestBody).post("/{first}/{second}/{third}/{fourth}");
             if (!listOfOrganizers.contains(Integer.parseInt(ConfigReader.getProperty("org_id")))) {
                 responseBody = new ResponseTagAndTagGroupPojo(ConfigReader.getProperty("error_code"), ConfigReader.getProperty("concept"),
                         null, null);
@@ -70,8 +70,6 @@ public class TagGroupCreateDynStepDefs extends AudienceManagementBaseURL {
                 System.out.println("error : organizer does not exist!");
 
             } else if (listOfUnarchivedTagGroupNames.contains(ConfigReader.getProperty("name"))) {
-                //i do not understand when i provide a new name to assert group creation i think below, before assertion new name is displayed on
-                //name column on db and query is always giving trueso i can not escape here. try to find another way for creation assertion ????
                 responseBody = new ResponseTagAndTagGroupPojo(ConfigReader.getProperty("error_code_name_exists_group"),
                         ConfigReader.getProperty("concept"), null, null);
                 actualData = obj.readValue(response.asString(), ResponseTagAndTagGroupPojo.class);
