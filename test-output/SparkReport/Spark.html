@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 6, 2023 04:25:02 PM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 19, 2023 03:16:11 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 6, 2023 04:25:02 PM</h3>
+<h3>Sep 19, 2023 03:16:11 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 6, 2023 04:25:04 PM</h3>
+<h3>Sep 19, 2023 03:16:13 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Tag update with db connection":2.075
+"tag find all by organizer id":1.614
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tag_update</td>
+<td>@tag_find_all_by_org</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tag_update</a>
+<a class="dropdown-item" href="#">@tag_find_all_by_org</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Tag update with db connection</p>
+            <p class="name">tag find all by organizer id</p>
             <p class="text-sm">
-              <span>4:25:02 PM</span> / <span>00:00:02:075</span>
+              <span>3:16:11 PM</span> / <span>00:00:01:614</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Tag update with db connection</h5>
-<span class='badge badge-success'>09.06.2023 4:25:02 PM</span>
-<span class='badge badge-danger'>09.06.2023 4:25:04 PM</span>
-<span class='badge badge-default'>00:00:02:075</span>
+<h5 class="test-status text-pass">tag find all by organizer id</h5>
+<span class='badge badge-success'>09.19.2023 3:16:11 PM</span>
+<span class='badge badge-danger'>09.19.2023 3:16:13 PM</span>
+<span class='badge badge-default'>00:00:01:614</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,23 +274,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Tag update with all scenarios</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>find all tags</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagUpdate.user_creates_request_for_tag_update()">
-                <span>Given user creates request for tag update</span>
+              <div class="step pass-bg" title="stepdefinitions.TagFindAllByOrgId.user_generates_requset_body_with_organizer_id()">
+                <span>Given user generates requset body with organizer id</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagUpdate.user_sends_post_request_for_tag_update()">
-                <span>When user sends post request for tag update</span>
+              <div class="step pass-bg" title="stepdefinitions.TagFindAllByOrgId.user_sends_post_request_for_finding_all_tags_related_to_organizer()">
+                <span>When user sends post request for finding all tags related to organizer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagUpdate.user_validates_tag_update()">
-                <span>Then user validates tag update</span>
+              <div class="step pass-bg" title="stepdefinitions.TagFindAllByOrgId.user_verifies_all_tags_info_listed_consecutively()">
+                <span>Then user verifies all tags info listed consecutively</span>
       <div>
       </div>
               </div>
@@ -322,12 +322,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tag_update</p>
+<p class="name">@tag_find_all_by_org</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tag_update</h4>
+<h4>@tag_find_all_by_org</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -341,11 +341,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:25:02 PM</td>
+<td>15:16:11 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Tag update with all scenarios</a>
+<a href="#" class="linked" test-id='1' id='2'>find all tags</a>
 <div class="">
-<span class="badge badge-default">Tag update with db connection.Tag update with all scenarios</span>
+<span class="badge badge-default">tag find all by organizer id.find all tags</span>
 </div>
 </td>
 </tr>

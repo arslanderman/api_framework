@@ -111,6 +111,7 @@ public class TagGroupCreateDynStepDefs extends AudienceManagementBaseURL {
                 System.out.println("error : parent group is archived!");
             } else {
                 actualDataWithTag_or_TagGroup_ID = obj.readValue(response.asString(), TagAndTagGroupResponseDataPositive.class);
+                System.out.println("actual dataaa "+actualDataWithTag_or_TagGroup_ID);
                 Assert.assertFalse(actualDataWithTag_or_TagGroup_ID.getData().getId().toString().isEmpty());
                 //Assert.assertTrue(listOfUnarchivedTagGroupNames.contains(ConfigReader.getProperty("name")));
                 Assert.assertEquals(response.getStatusCode(), z);

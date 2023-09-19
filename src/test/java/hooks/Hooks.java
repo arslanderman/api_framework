@@ -43,7 +43,7 @@ public class Hooks extends AudienceManagementBaseURL {
 
      */
 
-    @Before(value ="@tag_update")
+    @Before(value ="@tag_find_all_by_org")
     public static void beforeApiHeaders(){
         headers = headersForPost(ConfigReader.getProperty("ContentType"),ConfigReader.getProperty("host"));
     }
