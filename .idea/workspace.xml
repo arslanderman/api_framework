@@ -9,13 +9,11 @@
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupCreateDynStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupCreateDynStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/html-reports/cucember.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/html-reports/cucember.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-reports/cucember.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucember.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupCreateDynStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupCreateDynStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagFindAllByOrgId.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagFindAllByOrgId.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-reports/cucember.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-reports/cucember.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />

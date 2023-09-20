@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.829">
-    <testcase classname="tag find all by organizer id" name="find all tags" time="1.674">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.901">
+    <testcase classname="updating active field of tag" name="update tag active field with all possible scanerios" time="1.798">
         <system-out>
-            <![CDATA[Given user generates requset body with organizer id.........................passed
-When user sends post request for finding all tags related to organizer......passed
-Then user verifies all tags info listed consecutively.......................passed
+            <![CDATA[Given user creates request for updating active field of tag.................passed
+When user sends post request for updating active field of tag...............passed
+Then user validates updating active field...................................passed
 ]]>
         </system-out>
     </testcase>
