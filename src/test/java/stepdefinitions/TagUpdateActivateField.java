@@ -34,7 +34,6 @@ public class TagUpdateActivateField extends AudienceManagementBaseURL {
     int i = Integer.parseInt(ConfigReader.getProperty("org_id"));
     int y = Integer.parseInt(ConfigReader.getProperty("status_a"));
     int j = Integer.parseInt(ConfigReader.getProperty("status_b"));
-    int z = Integer.parseInt(ConfigReader.getProperty("status_c"));
     int x = Integer.parseInt(ConfigReader.getProperty("status_d"));
 
 
@@ -105,7 +104,5 @@ public class TagUpdateActivateField extends AudienceManagementBaseURL {
                 Assert.assertEquals(response.getStatusCode(), x);
             }
         }
-
     }
-
 }

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 20, 2023 11:29:20 AM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 20, 2023 05:44:30 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 20, 2023 11:29:20 AM</h3>
+<h3>Sep 20, 2023 05:44:30 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 20, 2023 11:29:22 AM</h3>
+<h3>Sep 20, 2023 05:44:33 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"updating active field of tag":1.762
+"Tag delete":2.46
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tag_update_active_field</td>
+<td>@tag_delete</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tag_update_active_field</a>
+<a class="dropdown-item" href="#">@tag_delete</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">updating active field of tag</p>
+            <p class="name">Tag delete</p>
             <p class="text-sm">
-              <span>11:29:20 AM</span> / <span>00:00:01:762</span>
+              <span>5:44:30 PM</span> / <span>00:00:02:460</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">updating active field of tag</h5>
-<span class='badge badge-success'>09.20.2023 11:29:20 AM</span>
-<span class='badge badge-danger'>09.20.2023 11:29:22 AM</span>
-<span class='badge badge-default'>00:00:01:762</span>
+<h5 class="test-status text-pass">Tag delete</h5>
+<span class='badge badge-success'>09.20.2023 5:44:30 PM</span>
+<span class='badge badge-danger'>09.20.2023 5:44:33 PM</span>
+<span class='badge badge-default'>00:00:02:460</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,23 +274,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>update tag active field with all possible scanerios</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>tag delete with all scenario</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagUpdateActivateField.user_creates_request_for_updating_active_field_of_tag()">
-                <span>Given user creates request for updating active field of tag</span>
+              <div class="step pass-bg" title="stepdefinitions.TagDelete.user_creates_request_body_for_tag_delete()">
+                <span>Given user creates request body for tag delete</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagUpdateActivateField.user_sends_post_request_for_updating_active_field_of_tag()">
-                <span>When user sends post request for updating active field of tag</span>
+              <div class="step pass-bg" title="stepdefinitions.TagDelete.user_sends_post_request_for_tag_delete()">
+                <span>When user sends post request for tag delete</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagUpdateActivateField.user_validates_updating_active_field()">
-                <span>Then user validates updating active field</span>
+              <div class="step pass-bg" title="stepdefinitions.TagDelete.user_validates_tag_deletion()">
+                <span>Then user validates tag deletion</span>
       <div>
       </div>
               </div>
@@ -322,12 +322,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tag_update_active_field</p>
+<p class="name">@tag_delete</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tag_update_active_field</h4>
+<h4>@tag_delete</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -341,11 +341,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:29:20 AM</td>
+<td>17:44:30 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>update tag active field with all possible scanerios</a>
+<a href="#" class="linked" test-id='1' id='2'>tag delete with all scenario</a>
 <div class="">
-<span class="badge badge-default">updating active field of tag.update tag active field with all possible scanerios</span>
+<span class="badge badge-default">Tag delete.tag delete with all scenario</span>
 </div>
 </td>
 </tr>
