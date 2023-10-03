@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 20, 2023 05:44:30 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 3, 2023 10:49:10 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 20, 2023 05:44:30 PM</h3>
+<h3>Oct 3, 2023 10:49:10 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 20, 2023 05:44:33 PM</h3>
+<h3>Oct 3, 2023 10:49:15 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>15</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Tag delete":2.46
+"Finding all tags those link to given entity":4.389
 };
 </script>
 <div class="row">
@@ -172,8 +172,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tag_delete</td>
-<td>1</td>
+<td>@tags_linked_to_entity</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -207,13 +207,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 5,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
+passGrandChild: 15,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tag_delete</a>
+<a class="dropdown-item" href="#">@tags_linked_to_entity</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Tag delete</p>
+            <p class="name">Finding all tags those link to given entity</p>
             <p class="text-sm">
-              <span>5:44:30 PM</span> / <span>00:00:02:460</span>
+              <span>10:49:11 PM</span> / <span>00:00:04:389</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Tag delete</h5>
-<span class='badge badge-success'>09.20.2023 5:44:30 PM</span>
-<span class='badge badge-danger'>09.20.2023 5:44:33 PM</span>
-<span class='badge badge-default'>00:00:02:460</span>
+<h5 class="test-status text-pass">Finding all tags those link to given entity</h5>
+<span class='badge badge-success'>10.03.2023 10:49:11 PM</span>
+<span class='badge badge-danger'>10.03.2023 10:49:15 PM</span>
+<span class='badge badge-default'>00:00:04:389</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,23 +274,127 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>tag delete with all scenario</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>organizer does not exist</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.TagDelete.user_creates_request_body_for_tag_delete()">
-                <span>Given user creates request body for tag delete</span>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
+                <span>Given user creates request body for finding all tags link to an entity</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagDelete.user_sends_post_request_for_tag_delete()">
-                <span>When user sends post request for tag delete</span>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
+                <span>When user sends post request for finding all tags link to an entity</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TagDelete.user_validates_tag_deletion()">
-                <span>Then user validates tag deletion</span>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_organizer_not_found_error_with_status_code(java.lang.String)">
+                <span>Then user validates organizer not found error with "404" status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>entity type not found</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
+                <span>Given user creates request body for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
+                <span>When user sends post request for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_entity_type_not_found_error_with_status_code(java.lang.String)">
+                <span>Then user validates entity type not found error with "404" status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>entity not found</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
+                <span>Given user creates request body for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
+                <span>When user sends post request for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_entity_not_found_error_with_status_code(java.lang.String)">
+                <span>Then user validates entity not found error with "404" status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>entity not link to organizer</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
+                <span>Given user creates request body for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
+                <span>When user sends post request for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_entity_not_link_to_organizer_error_with_status_code(java.lang.String)">
+                <span>Then user validates entity not link to organizer error with "409" status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>find all tags link to entity</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
+                <span>Given user creates request body for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
+                <span>When user sends post request for finding all tags link to an entity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_all_tags_link_to_given_entity_with_status_code(java.lang.String)">
+                <span>Then user validates all tags link to given entity with "200" status code</span>
       <div>
       </div>
               </div>
@@ -320,15 +424,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>5</span>
 </span>
-<p class="name">@tag_delete</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@tags_linked_to_entity</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tag_delete</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@tags_linked_to_entity</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -341,11 +445,51 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:44:30 PM</td>
+<td>22:49:11 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>tag delete with all scenario</a>
+<a href="#" class="linked" test-id='1' id='2'>organizer does not exist</a>
 <div class="">
-<span class="badge badge-default">Tag delete.tag delete with all scenario</span>
+<span class="badge badge-default">Finding all tags those link to given entity.organizer does not exist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:49:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>entity type not found</a>
+<div class="">
+<span class="badge badge-default">Finding all tags those link to given entity.entity type not found</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:49:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>entity not found</a>
+<div class="">
+<span class="badge badge-default">Finding all tags those link to given entity.entity not found</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:49:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>entity not link to organizer</a>
+<div class="">
+<span class="badge badge-default">Finding all tags those link to given entity.entity not link to organizer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:49:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>find all tags link to entity</a>
+<div class="">
+<span class="badge badge-default">Finding all tags those link to given entity.find all tags link to entity</span>
 </div>
 </td>
 </tr>

@@ -21,7 +21,7 @@ import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 import static utilities.DBUtils.*;
 
-public class TagUpdate extends AudienceManagementBaseURL {
+public class TagUpdateStepDefs extends AudienceManagementBaseURL {
 
     TagAndTagGroupPojo requestBody;
     Response response;
@@ -129,7 +129,8 @@ public class TagUpdate extends AudienceManagementBaseURL {
         }else {
             try {
                 actualDataWithTag_or_TagGroup_ID = obj.readValue(response.asString(), TagAndTagGroupResponseDataPositive.class);
-                String id = actualDataWithTag_or_TagGroup_ID.getData().getId();
+                System.out.println("gfgfg "+actualDataWithTag_or_TagGroup_ID.getData().getId());
+                String id = actualDataWithTag_or_TagGroup_ID.getData().getId() ;
                 Assert.assertTrue(id == null || id.isEmpty());
             } catch (EOFException e) {
                 System.out.println("The response has no content, update has been made!");

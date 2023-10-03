@@ -1,6 +1,5 @@
 package stepdefinitions;
 
-import audience_management_test_data.Headers;
 import base_url_set_up.AudienceManagementBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +11,6 @@ import pojo.ResponseTagAndTagGroupPojo;
 import pojo.TagAndTagGroupPojo;
 import pojo.TagAndTagGroupResponseDataPositive;
 import utilities.ConfigReader;
-import utilities.DBUtils;
 
 import java.io.EOFException;
 import java.io.IOException;
@@ -23,7 +21,7 @@ import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 import static utilities.DBUtils.*;
 
-public class TagDelete extends AudienceManagementBaseURL {
+public class TagDeleteStepDefs extends AudienceManagementBaseURL {
 
     TagAndTagGroupPojo requestBody;
     ResponseTagAndTagGroupPojo responseBody;

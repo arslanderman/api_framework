@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-        tags = "@tag_delete",
+        tags = "@tags_linked_to_entity",
         dryRun = false
 
 

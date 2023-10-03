@@ -12,8 +12,6 @@ public class AudienceManagementBaseURL {
 
         spec = new RequestSpecBuilder().setBaseUri("http://178.32.169.19").build();
 
-
-
     }
 
 
