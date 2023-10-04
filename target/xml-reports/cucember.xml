@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="4.528">
-    <testcase classname="Finding all tags those link to given entity" name="organizer does not exist" time="1.683">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="5.702">
+    <testcase classname="Finding all tags those link to given entity" name="organizer does not exist" time="2.083">
         <system-out>
             <![CDATA[Given user creates request body for finding all tags link to an entity......passed
 When user sends post request for finding all tags link to an entity.........passed
@@ -8,7 +8,7 @@ Then user validates organizer not found error with "404" status code........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="entity type not found" time="0.625">
+    <testcase classname="Finding all tags those link to given entity" name="entity type not found" time="0.842">
         <system-out>
             <![CDATA[Given user creates request body for finding all tags link to an entity......passed
 When user sends post request for finding all tags link to an entity.........passed
@@ -16,7 +16,7 @@ Then user validates entity type not found error with "404" status code......pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="entity not found" time="0.61">
+    <testcase classname="Finding all tags those link to given entity" name="entity not found" time="0.855">
         <system-out>
             <![CDATA[Given user creates request body for finding all tags link to an entity......passed
 When user sends post request for finding all tags link to an entity.........passed
@@ -24,7 +24,7 @@ Then user validates entity not found error with "404" status code...........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="entity not link to organizer" time="0.638">
+    <testcase classname="Finding all tags those link to given entity" name="entity not link to organizer" time="0.852">
         <system-out>
             <![CDATA[Given user creates request body for finding all tags link to an entity......passed
 When user sends post request for finding all tags link to an entity.........passed
@@ -32,7 +32,7 @@ Then user validates entity not link to organizer error with "409" status code.pa
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="find all tags link to entity" time="0.811">
+    <testcase classname="Finding all tags those link to given entity" name="find all tags link to entity" time="0.903">
         <system-out>
             <![CDATA[Given user creates request body for finding all tags link to an entity......passed
 When user sends post request for finding all tags link to an entity.........passed

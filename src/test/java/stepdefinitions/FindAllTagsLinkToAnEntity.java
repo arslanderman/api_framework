@@ -38,6 +38,8 @@ public class FindAllTagsLinkToAnEntity extends AudienceManagementBaseURL {
     List<Object> listOfEntityTypes = getColumnData(ConfigReader.getProperty("query_entity_types"), "entity_type");
     List<Integer> listOfEntitiesLinkToTag = getColumnDataAsInteger(ConfigReader.getProperty("query_entities_on_core_tag_entity"), "entity_id");
     List<Integer> listOfEntitiesLinkToOrganizer = getColumnDataAsInteger(ConfigReader.getProperty("query_entities_with_organizer"), "entity_id");
+    List<Object> listOfArchivedTags = getColumnData(ConfigReader.getProperty("query_archived_tags"), "id");
+    List<Integer> listOfArchivedEntities = getColumnDataAsInteger(ConfigReader.getProperty("query_archived_entity"), "entity_id");
 
     int j = Integer.parseInt(ConfigReader.getProperty("org_id"));
     int i = Integer.parseInt(ConfigReader.getProperty("entity_no_1"));
@@ -119,6 +121,10 @@ public class FindAllTagsLinkToAnEntity extends AudienceManagementBaseURL {
                 Assert.assertEquals(response.getStatusCode(), Integer.parseInt(statusCode_a));
                 System.out.println("entity not found");
                 Assert.assertNotNull(actualDataWithTag_or_TagGroup_ID.getData());
+            } else if (!entityTypeList.contains(s)){
+                System.out.println("entity not found");
+                actualDataWithTag_or_TagGroup_ID = obj.readValue(response.asString(), TagAndTagGroupResponseDataPositive.class);
+                Assert.assertNotNull(actualDataWithTag_or_TagGroup_ID.getData());
             }
         }
     }
@@ -157,6 +163,10 @@ public class FindAllTagsLinkToAnEntity extends AudienceManagementBaseURL {
                 Assert.assertEquals(response.getStatusCode(), Integer.parseInt(statusCode_b));
                 System.out.println("error : entity not link to organizer!");
                 Assert.assertNotNull(actualDataWithTag_or_TagGroup_ID.getData());
+            } else if (!entityTypeList.contains(s)){
+                System.out.println("entity not link to organizer!");
+                actualDataWithTag_or_TagGroup_ID = obj.readValue(response.asString(), TagAndTagGroupResponseDataPositive.class);
+                Assert.assertNotNull(actualDataWithTag_or_TagGroup_ID.getData());
             }
         }
     }
@@ -167,5 +177,18 @@ public class FindAllTagsLinkToAnEntity extends AudienceManagementBaseURL {
             Assert.assertNotNull(actualDataWithTagDetails.getData());
             Assert.assertFalse(actualDataWithTagDetails.getData().toString().isEmpty());
             Assert.assertEquals(response.getStatusCode(), Integer.parseInt(statusCode_c));
+            boolean flag = false;
+            boolean flag1 = false;
+        for (int k = 0; k < actualDataWithTagDetails.getData().size(); k++) {
+            if (listOfArchivedTags.contains(actualDataWithTagDetails.getData().get(k).getId())) {
+                System.out.println("error : one of the displayed tag is archived ");
+                flag = true;
+            } else if (listOfArchivedEntities.contains(i)) {
+                System.out.println("error : entity is archived");
+                flag1 = true;
+            }
+        }
+            Assert.assertFalse(flag);
+            Assert.assertFalse(flag1);
     }
  }
