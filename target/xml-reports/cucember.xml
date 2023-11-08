@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="5.702">
-    <testcase classname="Finding all tags those link to given entity" name="organizer does not exist" time="2.083">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="6.395">
+    <testcase classname="Creating Subscription" name="organizer does exist" time="2.249">
         <system-out>
-            <![CDATA[Given user creates request body for finding all tags link to an entity......passed
-When user sends post request for finding all tags link to an entity.........passed
-Then user validates organizer not found error with "404" status code........passed
+            <![CDATA[Given user creates request body for subscription creation...................passed
+When user sends post request for subscription creation......................passed
+Then user validates organizer not found error with "404" status code for subscription creation.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="entity type not found" time="0.842">
+    <testcase classname="Creating Subscription" name="shop exists" time="0.851">
         <system-out>
-            <![CDATA[Given user creates request body for finding all tags link to an entity......passed
-When user sends post request for finding all tags link to an entity.........passed
-Then user validates entity type not found error with "404" status code......passed
+            <![CDATA[Given user creates request body for subscription creation...................passed
+When user sends post request for subscription creation......................passed
+Then user validates shop not found error with "404" status code for subscription creation.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="entity not found" time="0.855">
+    <testcase classname="Creating Subscription" name="shop links to organizer" time="1.015">
         <system-out>
-            <![CDATA[Given user creates request body for finding all tags link to an entity......passed
-When user sends post request for finding all tags link to an entity.........passed
-Then user validates entity not found error with "404" status code...........passed
+            <![CDATA[Given user creates request body for subscription creation...................passed
+When user sends post request for subscription creation......................passed
+Then user validates shop not link to organizer with "409" status code for subscription creation.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="entity not link to organizer" time="0.852">
+    <testcase classname="Creating Subscription" name="name is not empty or not filled only with spaces" time="1.223">
         <system-out>
-            <![CDATA[Given user creates request body for finding all tags link to an entity......passed
-When user sends post request for finding all tags link to an entity.........passed
-Then user validates entity not link to organizer error with "409" status code.passed
+            <![CDATA[Given user creates request body for subscription creation...................passed
+When user sends post request for subscription creation......................passed
+Then user validates name is empty or filled with spaces with "409" status code.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Finding all tags those link to given entity" name="find all tags link to entity" time="0.903">
+    <testcase classname="Creating Subscription" name="subscription create" time="0.957">
         <system-out>
-            <![CDATA[Given user creates request body for finding all tags link to an entity......passed
-When user sends post request for finding all tags link to an entity.........passed
-Then user validates all tags link to given entity with "200" status code....passed
+            <![CDATA[Given user creates request body for subscription creation...................passed
+When user sends post request for subscription creation......................passed
+Then user validates new rows on core_subscription_settings and core_subscription_setting_lang with "201" status code.passed
 ]]>
         </system-out>
     </testcase>

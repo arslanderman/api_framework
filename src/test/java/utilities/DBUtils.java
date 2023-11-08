@@ -4,10 +4,9 @@ package utilities;
 
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class  DBUtils {
 
@@ -206,6 +205,19 @@ public class  DBUtils {
         }
         return extratedData;
     }
+
+    public static List<java.util.Date> getColumnDataAsDate(String query, String columnname) throws ParseException {
+
+        List<java.util.Date> extratedData = new ArrayList<>();
+        List<Object> columnData = getColumnData(query,columnname);
+        for (int i = 0; i < columnData.size(); i++) {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            extratedData.add(dateFormat.parse(columnData.get(i).toString()));
+        }
+        return extratedData;
+    }
+
+
 
     public static void main(String[] args) throws SQLException {
         createConnection();

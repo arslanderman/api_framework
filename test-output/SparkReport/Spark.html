@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 4, 2023 12:02:26 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 8, 2023 10:39:59 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 4, 2023 12:02:26 PM</h3>
+<h3>Nov 8, 2023 10:39:59 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 4, 2023 12:02:32 PM</h3>
+<h3>Nov 8, 2023 10:40:06 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Finding all tags those link to given entity":5.56
+"Creating Subscription":6.269
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tags_linked_to_entity</td>
+<td>@subscription_create</td>
 <td>5</td>
 <td>0</td>
 <td>0</td>
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tags_linked_to_entity</a>
+<a class="dropdown-item" href="#">@subscription_create</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Finding all tags those link to given entity</p>
+            <p class="name">Creating Subscription</p>
             <p class="text-sm">
-              <span>12:02:27 PM</span> / <span>00:00:05:560</span>
+              <span>10:40:00 AM</span> / <span>00:00:06:269</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Finding all tags those link to given entity</h5>
-<span class='badge badge-success'>10.04.2023 12:02:27 PM</span>
-<span class='badge badge-danger'>10.04.2023 12:02:32 PM</span>
-<span class='badge badge-default'>00:00:05:560</span>
+<h5 class="test-status text-pass">Creating Subscription</h5>
+<span class='badge badge-success'>11.08.2023 10:40:00 AM</span>
+<span class='badge badge-danger'>11.08.2023 10:40:06 AM</span>
+<span class='badge badge-default'>00:00:06:269</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,23 +274,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>organizer does not exist</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>organizer does exist</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
-                <span>Given user creates request body for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
+                <span>Given user creates request body for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
-                <span>When user sends post request for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
+                <span>When user sends post request for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_organizer_not_found_error_with_status_code(java.lang.String)">
-                <span>Then user validates organizer not found error with "404" status code</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_organizer_not_found_error_with_status_code_for_subscription_creation(java.lang.String)">
+                <span>Then user validates organizer not found error with "404" status code for subscription creation</span>
       <div>
       </div>
               </div>
@@ -300,23 +300,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>entity type not found</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>shop exists</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
-                <span>Given user creates request body for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
+                <span>Given user creates request body for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
-                <span>When user sends post request for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
+                <span>When user sends post request for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_entity_type_not_found_error_with_status_code(java.lang.String)">
-                <span>Then user validates entity type not found error with "404" status code</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_shop_not_found_error_with_status_code_for_subscription_creation(java.lang.String)">
+                <span>Then user validates shop not found error with "404" status code for subscription creation</span>
       <div>
       </div>
               </div>
@@ -326,23 +326,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>entity not found</div>
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>shop links to organizer</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
-                <span>Given user creates request body for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
+                <span>Given user creates request body for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
-                <span>When user sends post request for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
+                <span>When user sends post request for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_entity_not_found_error_with_status_code(java.lang.String)">
-                <span>Then user validates entity not found error with "404" status code</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_shop_not_link_to_organizer_with_status_code_for_subscription_creation(java.lang.String)">
+                <span>Then user validates shop not link to organizer with "409" status code for subscription creation</span>
       <div>
       </div>
               </div>
@@ -352,23 +352,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>entity not link to organizer</div>
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>name is not empty or not filled only with spaces</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
-                <span>Given user creates request body for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
+                <span>Given user creates request body for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
-                <span>When user sends post request for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
+                <span>When user sends post request for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_entity_not_link_to_organizer_error_with_status_code(java.lang.String)">
-                <span>Then user validates entity not link to organizer error with "409" status code</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_name_is_empty_or_filled_with_spaces_with_status_code(java.lang.String)">
+                <span>Then user validates name is empty or filled with spaces with "409" status code</span>
       <div>
       </div>
               </div>
@@ -378,23 +378,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>find all tags link to entity</div>
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>subscription create</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_creates_request_body_for_finding_all_tags_link_to_an_entity()">
-                <span>Given user creates request body for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
+                <span>Given user creates request body for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_sends_post_request_for_finding_all_tags_link_to_an_entity()">
-                <span>When user sends post request for finding all tags link to an entity</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
+                <span>When user sends post request for subscription creation</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.FindAllTagsLinkToAnEntity.user_validates_all_tags_link_to_given_entity_with_status_code(java.lang.String)">
-                <span>Then user validates all tags link to given entity with "200" status code</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_new_rows_on_core_subscription_settings_and_core_subscription_setting_lang_with_status_code(java.lang.String)">
+                <span>Then user validates new rows on core_subscription_settings and core_subscription_setting_lang with "201" status code</span>
       <div>
       </div>
               </div>
@@ -426,12 +426,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>5</span>
 </span>
-<p class="name">@tags_linked_to_entity</p>
+<p class="name">@subscription_create</p>
 <p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tags_linked_to_entity</h4>
+<h4>@subscription_create</h4>
 <span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -445,51 +445,51 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:27 PM</td>
+<td>10:40:00 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>organizer does not exist</a>
+<a href="#" class="linked" test-id='1' id='2'>organizer does exist</a>
 <div class="">
-<span class="badge badge-default">Finding all tags those link to given entity.organizer does not exist</span>
+<span class="badge badge-default">Creating Subscription.organizer does exist</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:29 PM</td>
+<td>10:40:02 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='8'>entity type not found</a>
+<a href="#" class="linked" test-id='1' id='8'>shop exists</a>
 <div class="">
-<span class="badge badge-default">Finding all tags those link to given entity.entity type not found</span>
+<span class="badge badge-default">Creating Subscription.shop exists</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:30 PM</td>
+<td>10:40:03 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>entity not found</a>
+<a href="#" class="linked" test-id='1' id='14'>shop links to organizer</a>
 <div class="">
-<span class="badge badge-default">Finding all tags those link to given entity.entity not found</span>
+<span class="badge badge-default">Creating Subscription.shop links to organizer</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:31 PM</td>
+<td>10:40:04 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>entity not link to organizer</a>
+<a href="#" class="linked" test-id='1' id='20'>name is not empty or not filled only with spaces</a>
 <div class="">
-<span class="badge badge-default">Finding all tags those link to given entity.entity not link to organizer</span>
+<span class="badge badge-default">Creating Subscription.name is not empty or not filled only with spaces</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:31 PM</td>
+<td>10:40:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='26'>find all tags link to entity</a>
+<a href="#" class="linked" test-id='1' id='26'>subscription create</a>
 <div class="">
-<span class="badge badge-default">Finding all tags those link to given entity.find all tags link to entity</span>
+<span class="badge badge-default">Creating Subscription.subscription create</span>
 </div>
 </td>
 </tr>

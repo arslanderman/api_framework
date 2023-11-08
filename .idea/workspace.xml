@@ -7,7 +7,75 @@
     <list default="true" id="30cd44dd-fd17-4247-a4dd-df983f9116a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/FindAllTagsLinkToAnEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/FindAllTagsLinkToAnEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/FindAllTagsLinkToAnEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/FindAllTagsLinkToAnEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagCreateDynStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagCreateDynStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagCreateStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagCreateStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagDeleteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagDeleteStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagEntityAddStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagEntityAddStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagEntityTypeFindAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagEntityTypeFindAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagFindAllByOrgId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagFindAllByOrgId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupCreateDynStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupCreateDynStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupCreateStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupCreateStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupDeleteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupDeleteStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupFindByOrganizerId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupFindByOrganizerId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupUpdateDynStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupUpdateDynStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagGroupUpdateStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupUpdateStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagUpdateActivateFieldStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagUpdateActivateFieldStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TagUpdateStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagUpdateStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/find_all_tags_linked_to_entity.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/find_all_tags_linked_to_entity.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_create.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_create.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_create_dyn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_create_dyn.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_delete.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_delete.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_entity_add.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_entity_add.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_entity_type_find_all.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_entity_type_find_all.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_find_all_by_org_id.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_find_all_by_org_id.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_group_create.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_create.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_group_create_dyn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_create_dyn.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_group_delete.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_delete.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_group_find_by_organizer_id.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_find_by_organizer_id.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_group_update.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_update.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_group_update_dyn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_update_dyn.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_update.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_update.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/tag_update_active_field.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_update_active_field.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/html-reports/cucember.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/html-reports/cucember.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucember.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucember.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/find_all_tags_linked_to_entity.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_create.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_create_dyn.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_delete.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_entity_add.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_entity_type_find_all.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_find_all_by_org_id.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_group_create.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_group_create_dyn.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_group_delete.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_group_find_by_organizer_id.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_group_update.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_group_update_dyn.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_update.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/tag_update_active_field.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/FindAllTagsLinkToAnEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagCreateDynStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagCreateStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagDeleteStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagEntityAddStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagEntityTypeFindAll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagFindAllByOrgId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupCreateDynStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupCreateStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupDeleteStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupFindByOrganizerId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupUpdateDynStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagGroupUpdateStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagUpdateActivateFieldStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/TagUpdateStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-reports/cucember.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-reports/cucember.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
     </list>
@@ -55,6 +123,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features/audience_management" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.Runner">
     <configuration name="DBUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utilities.DBUtils" />

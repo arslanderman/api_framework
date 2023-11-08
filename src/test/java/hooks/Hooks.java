@@ -53,12 +53,12 @@ public class Hooks extends AudienceManagementBaseURL {
 
 
 
-    @Before(order = 1,value ="@tags_linked_to_entity")
+    @Before(order = 1,value ="@subscription_create")
     public static void beforeApiHeaders(){
         headers = headersForPost(ConfigReader.getProperty("ContentType"),ConfigReader.getProperty("host"));
     }
 
-    @Before(order = 2,value ="@tags_linked_to_entity")
+    @Before(order = 2,value ="@subscription_create")
     public static void connection() throws SQLException {
         createConnection();
     }
