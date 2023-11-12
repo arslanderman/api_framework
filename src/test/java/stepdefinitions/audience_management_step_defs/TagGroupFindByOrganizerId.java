@@ -1,16 +1,15 @@
 package stepdefinitions.audience_management_step_defs;
 
-import audience_management_test_data.Headers;
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.Assert;
-import pojo.FindAllListPojo;
-import pojo.ResponseTagAndTagGroupPojo;
-import pojo.TagAndTagGroupPojo;
+import pojo.audience_pojo.FindAllListPojo;
+import pojo.audience_pojo.ResponseTagAndTagGroupPojo;
+import pojo.audience_pojo.TagAndTagGroupPojo;
 import utilities.ConfigReader;
 
 import java.io.IOException;
@@ -22,12 +21,11 @@ import java.util.Map;
 import static audience_management_test_data.Headers.headers;
 import static audience_management_test_data.TagAndTagGroupTestData.tagAndTagGroups;
 import static io.restassured.RestAssured.*;
-import static utilities.TxtWriter.saveDataTagGroups;
 
-public class TagGroupFindByOrganizerId extends AudienceManagementBaseURL {
+public class TagGroupFindByOrganizerId extends CoreBaseURL {
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","setting","second","tag","third","group","fourth","find-by-organizer-id");
     }
     TagAndTagGroupPojo requestBody;

@@ -1,27 +1,17 @@
 package hooks;
 
-import base_url_set_up.AudienceManagBaseUrlStatic;
-import base_url_set_up.AudienceManagementBaseURL;
-import io.cucumber.java.After;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.specification.RequestSpecification;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import utilities.ConfigReader;
-import utilities.DBUtils;
-import utilities.Driver;
 
 import java.sql.*;
 import java.util.Map;
 
 import static audience_management_test_data.Headers.headersForPost;
-import static audience_management_test_data.HeadersAudienceManagment.header;
 import static utilities.DBUtils.createConnection;
 
 
-public class Hooks extends AudienceManagementBaseURL {
+public class Hooks extends CoreBaseURL {
 
     private static Connection connection;
     private static Statement statement;
@@ -53,12 +43,12 @@ public class Hooks extends AudienceManagementBaseURL {
 
 
 
-    @Before(order = 1,value ="@subscription_create")
+    @Before(order = 1,value ="@update_active_field")
     public static void beforeApiHeaders(){
         headers = headersForPost(ConfigReader.getProperty("ContentType"),ConfigReader.getProperty("host"));
     }
 
-    @Before(order = 2,value ="@subscription_create")
+    @Before(order = 2,value ="@update_active_field")
     public static void connection() throws SQLException {
         createConnection();
     }

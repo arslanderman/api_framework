@@ -1,14 +1,14 @@
 package stepdefinitions.audience_management_step_defs;
 
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.Assert;
-import pojo.FindAllListPojo;
-import pojo.TagAndTagGroupPojo;
+import pojo.audience_pojo.FindAllListPojo;
+import pojo.audience_pojo.TagAndTagGroupPojo;
 import utilities.ConfigReader;
 
 import java.io.IOException;
@@ -18,7 +18,7 @@ import java.util.List;
 import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 
-public class TagEntityTypeFindAll extends AudienceManagementBaseURL {
+public class TagEntityTypeFindAll extends CoreBaseURL {
     TagAndTagGroupPojo requestBody;
     Response response;
     FindAllListPojo responseBody;
@@ -28,7 +28,7 @@ public class TagEntityTypeFindAll extends AudienceManagementBaseURL {
 
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","setting","second","tag","third","entity","fourth","find-all-types");
     }
 

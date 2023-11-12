@@ -1,6 +1,6 @@
 package stepdefinitions.audience_management_step_defs;
 
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,7 +9,7 @@ import utilities.ConfigReader;
 import java.util.Arrays;
 import java.util.List;
 
-public class TagRuleCreateStepDefs extends AudienceManagementBaseURL {
+public class TagRuleCreateStepDefs extends CoreBaseURL {
 
     List<String> tagsAdded = Arrays.asList("");
     List<String> tagsRemoved = Arrays.asList("");
@@ -17,7 +17,7 @@ public class TagRuleCreateStepDefs extends AudienceManagementBaseURL {
     int j = Integer.parseInt(ConfigReader.getProperty("sort"));
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","setting","second","tag","third","rule","fourth","create");
     }
 

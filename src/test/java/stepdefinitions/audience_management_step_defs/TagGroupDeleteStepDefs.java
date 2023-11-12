@@ -1,15 +1,14 @@
 package stepdefinitions.audience_management_step_defs;
 
-import audience_management_test_data.Headers;
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.Assert;
-import pojo.ResponseTagAndTagGroupPojo;
-import pojo.TagAndTagGroupPojo;
+import pojo.audience_pojo.ResponseTagAndTagGroupPojo;
+import pojo.audience_pojo.TagAndTagGroupPojo;
 import utilities.ConfigReader;
 
 import java.io.IOException;
@@ -17,7 +16,7 @@ import java.io.IOException;
 import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 
-public class TagGroupDeleteStepDefs extends AudienceManagementBaseURL {
+public class TagGroupDeleteStepDefs extends CoreBaseURL {
     TagAndTagGroupPojo requestBody;
 
     ResponseTagAndTagGroupPojo responseBody;
@@ -29,7 +28,7 @@ public class TagGroupDeleteStepDefs extends AudienceManagementBaseURL {
     ObjectMapper obj;
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","setting","second","tag","third","group","fourth","delete");
     }
 

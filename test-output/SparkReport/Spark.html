@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 8, 2023 10:39:59 AM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 12, 2023 06:08:46 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 8, 2023 10:39:59 AM</h3>
+<h3>Nov 12, 2023 06:08:46 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 8, 2023 10:40:06 AM</h3>
+<h3>Nov 12, 2023 06:08:52 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Creating Subscription":6.269
+"Subscription settings updating active field":5.945
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@subscription_create</td>
+<td>@update_active_field</td>
 <td>5</td>
 <td>0</td>
 <td>0</td>
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@subscription_create</a>
+<a class="dropdown-item" href="#">@update_active_field</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Creating Subscription</p>
+            <p class="name">Subscription settings updating active field</p>
             <p class="text-sm">
-              <span>10:40:00 AM</span> / <span>00:00:06:269</span>
+              <span>6:08:46 PM</span> / <span>00:00:05:945</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Creating Subscription</h5>
-<span class='badge badge-success'>11.08.2023 10:40:00 AM</span>
-<span class='badge badge-danger'>11.08.2023 10:40:06 AM</span>
-<span class='badge badge-default'>00:00:06:269</span>
+<h5 class="test-status text-pass">Subscription settings updating active field</h5>
+<span class='badge badge-success'>11.12.2023 6:08:46 PM</span>
+<span class='badge badge-danger'>11.12.2023 6:08:52 PM</span>
+<span class='badge badge-default'>00:00:05:945</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -279,44 +279,18 @@ eventsCount: 5,
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
-                <span>Given user creates request body for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_creates_request_body_for_subscription_setting_update_active_field()">
+                <span>Given user creates request body for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
-                <span>When user sends post request for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_sends_post_request_for_subscription_setting_update_active_field()">
+                <span>When user sends post request for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_organizer_not_found_error_with_status_code_for_subscription_creation(java.lang.String)">
-                <span>Then user validates organizer not found error with "404" status code for subscription creation</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>shop exists</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
-                <span>Given user creates request body for subscription creation</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
-                <span>When user sends post request for subscription creation</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_shop_not_found_error_with_status_code_for_subscription_creation(java.lang.String)">
-                <span>Then user validates shop not found error with "404" status code for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_validates_organizer_not_found_error_with_status_code_for_updating_active_field(java.lang.String)">
+                <span>Then user validates organizer not found error with "404" status code for updating active field</span>
       <div>
       </div>
               </div>
@@ -326,23 +300,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>shop links to organizer</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>subscription setting exists</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
-                <span>Given user creates request body for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_creates_request_body_for_subscription_setting_update_active_field()">
+                <span>Given user creates request body for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
-                <span>When user sends post request for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_sends_post_request_for_subscription_setting_update_active_field()">
+                <span>When user sends post request for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_shop_not_link_to_organizer_with_status_code_for_subscription_creation(java.lang.String)">
-                <span>Then user validates shop not link to organizer with "409" status code for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_validates_subscription_setting_not_found_error_with_status_code(java.lang.String)">
+                <span>Then user validates subscription setting not found error with "404" status code</span>
       <div>
       </div>
               </div>
@@ -352,23 +326,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>name is not empty or not filled only with spaces</div>
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>subscription setting links to organizer</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
-                <span>Given user creates request body for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_creates_request_body_for_subscription_setting_update_active_field()">
+                <span>Given user creates request body for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
-                <span>When user sends post request for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_sends_post_request_for_subscription_setting_update_active_field()">
+                <span>When user sends post request for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_name_is_empty_or_filled_with_spaces_with_status_code(java.lang.String)">
-                <span>Then user validates name is empty or filled with spaces with "409" status code</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_validates_subscription_setting_not_link_to_organizer_error_with_status_code(java.lang.String)">
+                <span>Then user validates subscription setting not link to organizer error with "409" status code</span>
       <div>
       </div>
               </div>
@@ -378,23 +352,49 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>subscription create</div>
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>subscription setting is not archived</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_creates_request_body_for_subscription_creation()">
-                <span>Given user creates request body for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_creates_request_body_for_subscription_setting_update_active_field()">
+                <span>Given user creates request body for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_sends_post_request_for_subscription_creation()">
-                <span>When user sends post request for subscription creation</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_sends_post_request_for_subscription_setting_update_active_field()">
+                <span>When user sends post request for subscription setting update active field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionCreate.user_validates_new_rows_on_core_subscription_settings_and_core_subscription_setting_lang_with_status_code(java.lang.String)">
-                <span>Then user validates new rows on core_subscription_settings and core_subscription_setting_lang with "201" status code</span>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_validates_subscription_setting_is_archived_error_with_status_code(java.lang.String)">
+                <span>Then user validates subscription setting is archived error with "409" status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>subscription setting update active field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_creates_request_body_for_subscription_setting_update_active_field()">
+                <span>Given user creates request body for subscription setting update active field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_sends_post_request_for_subscription_setting_update_active_field()">
+                <span>When user sends post request for subscription setting update active field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.subscriptions_management_step_defs.SubscriptionsUpdateActiveField.user_validates_subscription_setting_table_is_active_field_is_updated_with_status_code(java.lang.String)">
+                <span>Then user validates subscription setting table is_active field is updated with "204" status code</span>
       <div>
       </div>
               </div>
@@ -426,12 +426,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>5</span>
 </span>
-<p class="name">@subscription_create</p>
+<p class="name">@update_active_field</p>
 <p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@subscription_create</h4>
+<h4>@update_active_field</h4>
 <span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -445,51 +445,51 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:00 AM</td>
+<td>18:08:46 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>organizer does exist</a>
 <div class="">
-<span class="badge badge-default">Creating Subscription.organizer does exist</span>
+<span class="badge badge-default">Subscription settings updating active field.organizer does exist</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:02 AM</td>
+<td>18:08:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='8'>shop exists</a>
+<a href="#" class="linked" test-id='1' id='8'>subscription setting exists</a>
 <div class="">
-<span class="badge badge-default">Creating Subscription.shop exists</span>
+<span class="badge badge-default">Subscription settings updating active field.subscription setting exists</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:03 AM</td>
+<td>18:08:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>shop links to organizer</a>
+<a href="#" class="linked" test-id='1' id='14'>subscription setting links to organizer</a>
 <div class="">
-<span class="badge badge-default">Creating Subscription.shop links to organizer</span>
+<span class="badge badge-default">Subscription settings updating active field.subscription setting links to organizer</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:04 AM</td>
+<td>18:08:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>name is not empty or not filled only with spaces</a>
+<a href="#" class="linked" test-id='1' id='20'>subscription setting is not archived</a>
 <div class="">
-<span class="badge badge-default">Creating Subscription.name is not empty or not filled only with spaces</span>
+<span class="badge badge-default">Subscription settings updating active field.subscription setting is not archived</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:05 AM</td>
+<td>18:08:51 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='26'>subscription create</a>
+<a href="#" class="linked" test-id='1' id='26'>subscription setting update active field</a>
 <div class="">
-<span class="badge badge-default">Creating Subscription.subscription create</span>
+<span class="badge badge-default">Subscription settings updating active field.subscription setting update active field</span>
 </div>
 </td>
 </tr>

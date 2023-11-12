@@ -1,23 +1,15 @@
 package stepdefinitions.audience_management_step_defs;
 
-import audience_management_test_data.Headers;
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.parsing.Parser;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
-import org.hamcrest.Matchers;
 import org.testng.Assert;
-import pojo.ResponseTagAndTagGroupPojo;
-import pojo.TagAndTagGroupPojo;
-import pojo.TagAndTagGroupResponseDataPositive;
+import pojo.audience_pojo.ResponseTagAndTagGroupPojo;
+import pojo.audience_pojo.TagAndTagGroupPojo;
 import utilities.ConfigReader;
-import utilities.DBUtils;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -25,13 +17,12 @@ import java.util.List;
 
 import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
-import static java.util.function.Predicate.not;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.Matchers.hasValue;
 import static utilities.DBUtils.createConnection;
 import static utilities.DBUtils.getColumnData;
 
-public class TagGroupUpdateStepDefs extends AudienceManagementBaseURL {
+public class TagGroupUpdateStepDefs extends CoreBaseURL {
 
     TagAndTagGroupPojo requestBody;
     ResponseTagAndTagGroupPojo responseBody;
@@ -41,7 +32,7 @@ public class TagGroupUpdateStepDefs extends AudienceManagementBaseURL {
 
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","setting","second","tag","third","group","fourth","update");
     }
 

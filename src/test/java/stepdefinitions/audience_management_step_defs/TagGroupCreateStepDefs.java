@@ -1,31 +1,24 @@
 package stepdefinitions.audience_management_step_defs;
 
-import base_url_set_up.AudienceManagementBaseURL;
-import hooks.Hooks;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import utilities.ConfigReader;
 
-import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 import static audience_management_test_data.Headers.headers;
-import static audience_management_test_data.HeadersAudienceManagment.header;
 import static audience_management_test_data.OrganizerNotFoundResponse.organizerNotFound;
 import static audience_management_test_data.ParentGroupNotLinkedToOrg.parentNotLinked;
 import static audience_management_test_data.TagAndTagGroupTestData.tagAndTagGroups;
 
-import static hooks.Hooks.beforeApiHeaders;
 import static io.restassured.RestAssured.*;
 
-public class TagGroupCreateStepDefs extends AudienceManagementBaseURL{
+public class TagGroupCreateStepDefs extends CoreBaseURL {
     Response response;
     Map<String,Object> requestBody;
     Map<String,Object> actualData;
@@ -33,7 +26,7 @@ public class TagGroupCreateStepDefs extends AudienceManagementBaseURL{
 
         //instance initialization block
      {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","setting","second","tag","third","group","fourth","create");
      }
 

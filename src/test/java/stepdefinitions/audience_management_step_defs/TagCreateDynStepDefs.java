@@ -1,29 +1,26 @@
 package stepdefinitions.audience_management_step_defs;
 
-import audience_management_test_data.Headers;
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.Assert;
-import pojo.ResponseTagAndTagGroupPojo;
-import pojo.TagAndTagGroupPojo;
-import pojo.TagAndTagGroupResponseDataPositive;
+import pojo.audience_pojo.ResponseTagAndTagGroupPojo;
+import pojo.audience_pojo.TagAndTagGroupPojo;
+import pojo.audience_pojo.TagAndTagGroupResponseDataPositive;
 import utilities.ConfigReader;
-import utilities.DBUtils;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.List;
 
 import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 import static utilities.DBUtils.*;
 
-public class TagCreateDynStepDefs extends AudienceManagementBaseURL {
+public class TagCreateDynStepDefs extends CoreBaseURL {
 
     TagAndTagGroupPojo requestBody;
     ResponseTagAndTagGroupPojo responseBody;
@@ -38,7 +35,7 @@ public class TagCreateDynStepDefs extends AudienceManagementBaseURL {
 
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","setting","second","tag","third","create");
     }
 

@@ -1,6 +1,6 @@
 package utilities;
 
-import pojo.FindAllListPojo;
+import pojo.audience_pojo.FindAllListPojo;
 import pojo.SignUpPojo;
 
 import java.io.BufferedWriter;

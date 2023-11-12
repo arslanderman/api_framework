@@ -1,16 +1,16 @@
 package stepdefinitions.audience_management_step_defs;
 
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.Assert;
-import pojo.FindAllTagsPositivePojo;
-import pojo.ResponseTagAndTagGroupPojo;
-import pojo.TagAndTagGroupResponseDataPositive;
-import pojo.TagEntitySecondPojo;
+import pojo.audience_pojo.FindAllTagsPositivePojo;
+import pojo.audience_pojo.ResponseTagAndTagGroupPojo;
+import pojo.audience_pojo.TagAndTagGroupResponseDataPositive;
+import pojo.audience_pojo.TagEntitySecondPojo;
 import utilities.ConfigReader;
 
 import java.io.IOException;
@@ -22,7 +22,7 @@ import static io.restassured.RestAssured.*;
 import static utilities.DBUtils.getColumnData;
 import static utilities.DBUtils.getColumnDataAsInteger;
 
-public class FindAllTagsLinkToAnEntity extends AudienceManagementBaseURL {
+public class FindAllTagsLinkToAnEntity extends CoreBaseURL {
     TagEntitySecondPojo requestBody;
     ResponseTagAndTagGroupPojo responseBody;
     ResponseTagAndTagGroupPojo actualData;
@@ -45,7 +45,7 @@ public class FindAllTagsLinkToAnEntity extends AudienceManagementBaseURL {
     int i = Integer.parseInt(ConfigReader.getProperty("entity_no_1"));
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first", "setting", "second", "tag", "third", "find-by-entity-id-and-type");
     }
 

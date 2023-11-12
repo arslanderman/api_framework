@@ -1,29 +1,26 @@
 package stepdefinitions.audience_management_step_defs;
 
-import audience_management_test_data.Headers;
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.Assert;
-import pojo.ResponseTagFindAllByOrganizerPojo;
-import pojo.TagAndTagGroupPojo;
+import pojo.audience_pojo.ResponseTagFindAllByOrganizerPojo;
+import pojo.audience_pojo.TagAndTagGroupPojo;
 import utilities.ConfigReader;
-import utilities.DBUtils;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 import static utilities.DBUtils.*;
 
-public class TagFindAllByOrgId extends AudienceManagementBaseURL {
+public class TagFindAllByOrgId extends CoreBaseURL {
 
     TagAndTagGroupPojo requestBody;
     Response response;
@@ -32,7 +29,7 @@ public class TagFindAllByOrgId extends AudienceManagementBaseURL {
 
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first", "setting", "second", "tag", "third", "find-by-organizer-id");
     }
 

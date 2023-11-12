@@ -1,22 +1,20 @@
 package stepdefinitions.subscriptions_management_step_defs;
 
-import audience_management_test_data.Headers;
-import base_url_set_up.AudienceManagementBaseURL;
+import base_url_set_up.CoreBaseURL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.Assert;
-import pojo.ResponseTagAndTagGroupPojo;
-import pojo.SubscriptionCreatePojo;
-import pojo.SubscriptionCreateRequestPojo;
+import pojo.audience_pojo.ResponseTagAndTagGroupPojo;
+import pojo.subscription_pojo.SubscriptionCreatePojo;
+import pojo.subscription_pojo.SubscriptionCreateRequestPojo;
 import utilities.ConfigReader;
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -24,11 +22,10 @@ import static audience_management_test_data.Headers.headers;
 import static io.restassured.RestAssured.*;
 import static utilities.DBUtils.*;
 
-public class SubscriptionCreate extends AudienceManagementBaseURL {
+public class SubscriptionCreate extends CoreBaseURL {
 
     SubscriptionCreateRequestPojo requestBody;
     ResponseTagAndTagGroupPojo responseBody;
-
     ResponseTagAndTagGroupPojo actualData;
     SubscriptionCreatePojo actualDataWithSubscriptionCreation;
     Response response;
@@ -42,7 +39,7 @@ public class SubscriptionCreate extends AudienceManagementBaseURL {
     int i = Integer.parseInt(ConfigReader.getProperty("org_id"));
 
     {
-        audienceManagementSetUp();
+        coreSetUp();
         spec.pathParams("first","organizer","second","611","third",
                 "setting","fourth","subscription","fifth","create");
     }
@@ -53,7 +50,7 @@ public class SubscriptionCreate extends AudienceManagementBaseURL {
     @Given("user creates request body for subscription creation")
     public void user_creates_request_body_for_subscription_creation() {
         requestBody = new SubscriptionCreateRequestPojo(shopId,ConfigReader.getProperty("name"));
-        System.out.println(requestBody);
+        System.out.println("REQUEST BODY "+requestBody);
     }
     @When("user sends post request for subscription creation")
     public void user_sends_post_request_for_subscription_creation() {
@@ -107,6 +104,7 @@ public class SubscriptionCreate extends AudienceManagementBaseURL {
             responseBody = new ResponseTagAndTagGroupPojo(ConfigReader.getProperty("error_code_name_with_space"),
                     null, null, null);
             actualData = obj.readValue(response.asString(), ResponseTagAndTagGroupPojo.class);
+            System.out.println("ERROR CODE FOR NAME "+actualData.getError_code());
             Assert.assertEquals(actualData.getError_code(), responseBody.getError_code());
             Assert.assertEquals(response.getStatusCode(), Integer.parseInt(status_code_b));
             System.out.println("error : name must not be empty or must not be defined with just spaces!");
