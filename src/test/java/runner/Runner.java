@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features/subscriptions_management",
         glue = {"stepdefinitions/subscriptions_management_step_defs","hooks"},
-        tags = "@update_active_field",
+        tags = "@subscriptions_unarchive",
         dryRun = false
 
 

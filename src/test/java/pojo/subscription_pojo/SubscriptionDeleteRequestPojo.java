@@ -3,16 +3,15 @@ package pojo.subscription_pojo;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class UpdateActiveFieldRequestPojo {
+public class SubscriptionDeleteRequestPojo {
 
     private String subscriptionSettingId;
-    private Boolean isActive ;
 
-    public UpdateActiveFieldRequestPojo(String subscriptionSettingId, Boolean isActive) {
+    public SubscriptionDeleteRequestPojo(String subscriptionSettingId) {
         this.subscriptionSettingId = subscriptionSettingId;
-        this.isActive = isActive;
     }
-    public UpdateActiveFieldRequestPojo(){
+
+    public SubscriptionDeleteRequestPojo(){
 
     }
 
@@ -24,19 +23,10 @@ public class UpdateActiveFieldRequestPojo {
         this.subscriptionSettingId = subscriptionSettingId;
     }
 
-    public Boolean getIsActive() {
-        return isActive;
-    }
-
-    public void setIsActive(Boolean isActive) {
-        this.isActive = isActive;
-    }
-
     @Override
     public String toString() {
-        return "UpdateActiveFieldRequestPojo{" +
+        return "SubscriptionDeleteRequestPojo{" +
                 "subscriptionSettingId='" + subscriptionSettingId + '\'' +
-                ", isActive=" + isActive +
                 '}';
     }
 }

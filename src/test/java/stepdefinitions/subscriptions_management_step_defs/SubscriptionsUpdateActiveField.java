@@ -42,7 +42,7 @@ public class SubscriptionsUpdateActiveField extends CoreBaseURL {
 
     {
         coreSetUp();
-        spec.pathParams("first","organizer","second","787","third","setting","fourth","subscription",
+        spec.pathParams("first","organizer","second","7877","third","setting","fourth","subscription",
                 "fifth","update-active-field");
     }
 
@@ -56,6 +56,7 @@ public class SubscriptionsUpdateActiveField extends CoreBaseURL {
     @When("user sends post request for subscription setting update active field")
     public void user_sends_post_request_for_subscription_setting_update_active_field() {
         response = given().spec(spec).headers(headers).body(requestBody).post("/{first}/{second}/{third}/{fourth}/{fifth}");
+        response.prettyPrint();
     }
     @Then("user validates organizer not found error with {string} status code for updating active field")
     public void user_validates_organizer_not_found_error_with_status_code_for_updating_active_field(String status_code_a) throws IOException {
@@ -81,6 +82,8 @@ public class SubscriptionsUpdateActiveField extends CoreBaseURL {
             Assert.assertEquals(actualData.getConcept(), responseBody.getConcept());
             Assert.assertEquals(response.getStatusCode(), Integer.parseInt(status_code_a));
             System.out.println("error : subscription setting does not exist!");
+            actualDataWithSubscriptionId = obj.readValue(response.asString(),SubscriptionCreatePojo.class);
+            Assert.assertNotNull(actualDataWithSubscriptionId.getData());
         }
     }
     @Then("user validates subscription setting not link to organizer error with {string} status code")
@@ -113,9 +116,10 @@ public class SubscriptionsUpdateActiveField extends CoreBaseURL {
     }
     @Then("user validates subscription setting table is_active field is updated with {string} status code")
     public void user_validates_subscription_setting_table_is_active_field_is_updated_with_status_code(String status_code_c) throws IOException {
-            try{
+           try{ // i need to close try catch block for all negative path otherwise it is ignoring the codes and test passes
                 actualDataWithSubscriptionId = obj.readValue(response.asString(),SubscriptionCreatePojo.class);
             }catch (EOFException e){
+                System.out.println("status code "+response.getStatusCode());
                 Assert.assertEquals(response.getStatusCode(), Integer.parseInt(status_code_c));
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
                 String a = simpleDateFormat.getCalendar().getTime().toString();

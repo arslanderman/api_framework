@@ -3,10 +3,15 @@ package utilities;
 
 
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.Date;
+
+
 
 public class  DBUtils {
 
@@ -31,10 +36,20 @@ public class  DBUtils {
             e.printStackTrace();
         }
 
-
-
-
     }
+    public static void executeUpdate(String query) throws SQLException {
+
+        try {
+            statement = connection.createStatement();
+            statement.executeUpdate(query);
+        } finally {
+            if (statement != null) {
+                statement.close();
+            }
+        }
+    }
+
+
     /**
      * DBUtils.executeQuery(String query); -> Execute the query and store is the result set object
      */
@@ -207,26 +222,59 @@ public class  DBUtils {
     }
 
     public static List<java.util.Date> getColumnDataAsDate(String query, String columnname) throws ParseException {
-
-        List<java.util.Date> extratedData = new ArrayList<>();
-        List<Object> columnData = getColumnData(query,columnname);
+        /*
+        //List<java.util.Date> extratedData = new ArrayList<>();
+        List<Object> columnData = getColumnData(query, columnname);
+        List<Date> extratedData = null;
         for (int i = 0; i < columnData.size(); i++) {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy");
+            extratedData = new ArrayList<Date>();
             extratedData.add(dateFormat.parse(columnData.get(i).toString()));
         }
         return extratedData;
+        i am creating a new ArrayList<Date> (extratedData) inside the loop for each iteration.
+        This means that in each iteration, it is being created a new list and adding only one date to it.
+        Additionally, i am reassigning extratedData in each iteration, which causes the list to be overwritten.
+        To fix this issue,i need to initialize the extratedData list outside the loop and only add elements to it within the loop.
+         */
+
+        List<Object> columnData = getColumnData(query, columnname);
+        List<Date> extractedData = new ArrayList<>();
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+
+        for (Object data : columnData) {
+            if (data != null) {
+                extractedData.add(dateFormat.parse(data.toString()));
+            } else {
+                extractedData.add(new Date());
+                // Handle the case where data is null, e.g., by skipping or logging it.
+            }
+        }
+        return extractedData;
     }
 
-
-
     public static void main(String[] args) throws SQLException {
-        createConnection();
+       /* createConnection();
         String query = "select * from core_tag";
         List<Object> data = getColumnData(query,"name");
         System.out.println(data);
+        */
+        String pdfFilePath = "/Users/arslan/Downloads/titres_sejour (1).pdf";
 
+
+        try {
+            // Read the PDF file as bytes
+            byte[] pdfBytes = Files.readAllBytes(Paths.get(pdfFilePath));
+
+            // Encode the bytes into base64
+            String encodedPDF = Base64.getEncoder().encodeToString(pdfBytes);
+
+            // Now, 'encodedPDF' contains the base64-encoded representation of your PDF file
+            System.out.println(encodedPDF);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-
 
 }
