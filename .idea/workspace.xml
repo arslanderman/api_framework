@@ -4,180 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30cd44dd-fd17-4247-a4dd-df983f9116a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/audience_management_test_data/Headers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/audience_management_test_data/Headers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/audience_management_test_data/OrganizerNotFoundResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/audience_management_test_data/ParentGroupNotLinkedToOrg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/audience_management_test_data/TagAndTagGroupTestData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url_set_up/AudienceManagBaseUrlStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url_set_up/AudienceManagBaseUrlStatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url_set_up/CoreBaseURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url_set_up/CoreBaseURL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Homepage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserAccountPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/SignUpPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/FindAllTagsLInkedEntityInnerPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/FindAllTagsPositivePojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/ResponseTagAndTagGroupPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/ResponseTagFindAllByOrganizerPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/ResponseTagFindAllInnerPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagAndTagGroupPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagAndTagGroupResponseDataPositive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagAndTagGroupsResponseId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagEntityPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagEntitySecondPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagRuleActualInnerPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagRuleCreateActualPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/TagRulePojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionCreateInnerPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionCreatePojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionCreateRequestPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionDeleteRequestPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionFindByCriteriaRequestPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionFindByCriteriaResponseDataPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionFindByCriteriaResponseFilterPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionFindByCriteriaResponseHrefPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionFindByCriteriaResponsePojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/SubscriptionFindByCriteriaResponse_XPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/subscription_pojo/UpdateActiveFieldRequestPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/FindAllTagsLinkToAnEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagCreateDynStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagCreateStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagDeleteStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagEntityAddStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagEntityTypeFindAll.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagFindAllByOrgId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupCreateDynStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupCreateStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupDeleteStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupFindByOrganizerId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupUpdateDynStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagGroupUpdateStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagRuleCreateStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagUpdateActivateFieldStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/TagUpdateStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/subscriptions_management_step_defs/SubscriptionArchiveStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/subscriptions_management_step_defs/SubscriptionCreate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/subscriptions_management_step_defs/SubscriptionDelete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/subscriptions_management_step_defs/SubscriptionFindByCriteria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/subscriptions_management_step_defs/SubscriptionUnarchiveStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/subscriptions_management_step_defs/SubscriptionsUpdateActiveField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/JSUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TxtWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TxtWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/find_all_tags_linked_to_entity.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_create_dyn.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_delete.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_entity_add.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_entity_type_find_all.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_find_all_by_org_id.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_create_dyn.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_delete.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_find_by_organizer_id.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_update.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_group_update_dyn.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_rule_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_update.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/tag_update_active_field.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/subscriptions_management/subscription_setting_find_by_criteria.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/subscriptions_management/subscription_setting_unarchive.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/subscriptions_management/subscription_settings_archive.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/subscriptions_management/subscription_settings_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/subscriptions_management/subscription_settings_update_active_field.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/subscriptions_management/subscriptions_settings_delete.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/RegistrationData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failedRerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failedRerun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/html-reports/cucember.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/html-reports/cucember.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucember.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucember.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/audience_management_test_data/Headers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/audience_management_test_data/Headers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base_url_set_up/CoreBaseURL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base_url_set_up/CoreBaseURL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/find_all_tags_linked_to_entity.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_group_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_group_delete.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_group_find_by_organizer_id.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_group_update.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_rule_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/subscriptions_management/subscription_setting_find_by_criteria.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/subscriptions_management/subscription_setting_unarchive.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/subscriptions_management/subscription_settings_archive.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/subscriptions_management/subscription_settings_create.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/subscriptions_management/subscription_settings_update_active_field.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/subscriptions_management/subscriptions_settings_delete.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Homepage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SignUpPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/UserAccountPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/SignUpPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/FindAllTagsLInkedEntityInnerPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/FindAllTagsPositivePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/ResponseTagAndTagGroupPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/ResponseTagFindAllByOrganizerPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/ResponseTagFindAllInnerPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagAndTagGroupPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagAndTagGroupResponseDataPositive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagAndTagGroupsResponseId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagEntityPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagEntitySecondPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagRuleActualInnerPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagRuleCreateActualPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/TagRulePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionCreateInnerPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionCreatePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionCreateRequestPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionDeleteRequestPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionFindByCriteriaRequestPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionFindByCriteriaResponseDataPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionFindByCriteriaResponseFilterPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionFindByCriteriaResponseHrefPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionFindByCriteriaResponsePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/SubscriptionFindByCriteriaResponse_XPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/subscription_pojo/UpdateActiveFieldRequestPojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/FindAllTagsLinkToAnEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagCreateDynStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagCreateStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagDeleteStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagEntityAddStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagEntityTypeFindAll.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagFindAllByOrgId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagGroupCreateDynStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagGroupCreateStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagGroupDeleteStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagGroupFindByOrganizerId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagGroupUpdateDynStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagGroupUpdateStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagRuleCreateStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagUpdateActivateFieldStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/TagUpdateStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/subscriptions_management_step_defs/SubscriptionArchiveStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/subscriptions_management_step_defs/SubscriptionCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/subscriptions_management_step_defs/SubscriptionDelete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/subscriptions_management_step_defs/SubscriptionFindByCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/subscriptions_management_step_defs/SubscriptionUnarchiveStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/subscriptions_management_step_defs/SubscriptionsUpdateActiveField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testdata/RegistrationData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/JSUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/TxtWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/TxtWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-reports/cucember.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-reports/cucember.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
-    </list>
+    <list default="true" id="30cd44dd-fd17-4247-a4dd-df983f9116a6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,15 +39,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/arslan/Documents/aderman/intellj projects/pg_core_api&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/arslan/Documents/aderman/intellj_projects/api_framework",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/features/audience_management" />
