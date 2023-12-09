@@ -16,9 +16,9 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
-        features = "./src/test/resources/features/audience_management",
-        glue = {"stepdefinitions/audience_management_step_defs","hooks"},
-        tags = "@api_class",
+        features = "./src/test/resources/features/api_automation_class",
+        glue = {"stepdefinitions/api_automation_step_defs","hooks"},
+        tags = "@dummy_json",
         dryRun = false
 
 
