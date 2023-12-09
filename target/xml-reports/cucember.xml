@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.765">
-    <testcase classname="Getting Token" name="getting token with correct credentials" time="1.689">
-        <failure message="expected [200] but found [400]" type="java.lang.AssertionError">
-            <![CDATA[Given user creates request body for getting token...........................passed
-When user sends get request for getting dummy json token....................passed
-Then user validates token and other data with a "200" status code...........failed
-
-StackTrace:
-java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:839)
-	at org.testng.Assert.assertEquals(Assert.java:849)
-	at stepdefinitions.api_automation_step_defs.DummyJsonPostRequestForToken.user_validates_token_and_other_data_with_a_status_code(DummyJsonPostRequestForToken.java:47)
-	at ✽.user validates token and other data with a "200" status code(file:///Users/arslan/Documents/aderman/intellj_projects/api_framework/./src/test/resources/features/api_automation_class/dummy_json_fetching_token.feature:8)
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.26">
+    <testcase classname="Musterileri Bul" name="get request for users" time="2.171">
+        <system-out>
+            <![CDATA[Given user creates request for fetching users...............................passed
+When user sends get request for these new users.............................passed
+Then user validates user data for users with a "200" status code............passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

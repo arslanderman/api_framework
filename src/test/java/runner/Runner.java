@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features/api_automation_class",
         glue = {"stepdefinitions/api_automation_step_defs","hooks"},
-        tags = "@dummy_json",
+        tags = "@deneme",
         dryRun = false
 
 

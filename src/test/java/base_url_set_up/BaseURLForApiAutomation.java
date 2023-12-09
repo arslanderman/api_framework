@@ -9,7 +9,7 @@ public class BaseURLForApiAutomation {
 
     public void automationSetUp(){
 
-        spec = new RequestSpecBuilder().setBaseUri("https://dummyjson.com").build();
+        spec = new RequestSpecBuilder().setBaseUri("https://restful-booker.herokuapp.com").build();
 
     }
 

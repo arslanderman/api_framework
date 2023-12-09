@@ -33,7 +33,7 @@ public class RegresUserDataStepDefs extends BaseURLForApiAutomation {
     @When("user sends get request for user data")
     public void user_sends_get_request_for_user_data() {
         response = given().spec(spec).headers(headers).get("/{first}/{second}/{third}");
-        //response.prettyPrint();
+        response.prettyPrint();
     }
 
     @Then("user validates user data with a {string} status code")

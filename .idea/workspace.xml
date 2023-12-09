@@ -6,38 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="30cd44dd-fd17-4247-a4dd-df983f9116a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url_set_up/CoreBaseURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url_set_up/BaseURLForApiAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base_url_set_up/BaseURLForApiAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url_set_up/BaseURLForApiAutomation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/audience_pojo/FindAllListPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/api_automation_pojo/FindAllListPojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/audience_management_step_defs/RegresUserDataStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_automation_step_defs/RegresUserDataStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TxtWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TxtWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/audience_management/api_class.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api_automation_class/api_class.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_automation_step_defs/RegresUserDataStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_automation_step_defs/RegresUserDataStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/failedRerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failedRerun.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/html-reports/cucember.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/html-reports/cucember.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-reports/cucember.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucember.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/audience_management_test_data/OrganizerNotFoundResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/audience_management_test_data/ParentGroupNotLinkedToOrg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/audience_management_test_data/TagAndTagGroupTestData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base_url_set_up/CoreBaseURL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/api_class.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_create_dyn.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_delete.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_entity_add.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_entity_type_find_all.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_find_all_by_org_id.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_group_create_dyn.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_group_update_dyn.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_update.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/audience_management/tag_update_active_field.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base_url_set_up/BaseURLForApiAutomation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base_url_set_up/BaseURLForApiAutomation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/audience_pojo/FindAllListPojo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/audience_management_step_defs/RegresUserDataStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/TxtWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/TxtWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/api_automation_step_defs/DummyJsonPostRequestForToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/api_automation_step_defs/DummyJsonPostRequestForToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/api_automation_step_defs/RegresUserDataStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/api_automation_step_defs/RegresUserDataStepDefs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-reports/cucember.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-reports/cucember.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />

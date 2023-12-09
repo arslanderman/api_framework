@@ -17,7 +17,7 @@ public class Hooks extends BaseURLForApiAutomation {
     //private static ResultSet resultSet;
    static Map<String,String> headers;
 
-    @Before(order = 1,value ="@dummy_json")
+    @Before(order = 1,value ="@deneme")
     public static void beforeApiHeaders(){
         headers = headersForPost(ConfigReader.getProperty("ContentType"));
 
