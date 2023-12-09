@@ -1,51 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="7.017">
-    <testcase classname="Subscription settings unarchive" name="organizer exists" time="2.006">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.477">
+    <testcase classname="Api Class" name="get request for users" time="1.387">
         <system-out>
-            <![CDATA[Given user creates request body for subscription setting unarchive..........passed
-When user sends post request for subscription setting unarchive.............passed
-Then user validates organizer not found error with "404" status code for subscription unarchive.passed
+            <![CDATA[Given user creates request for getting user data............................passed
+When user sends get request for user data...................................passed
+Then user validates user data...............................................passed
 ]]>
         </system-out>
-    </testcase>
-    <testcase classname="Subscription settings unarchive" name="subscription setting exists" time="1.166">
-        <system-out>
-            <![CDATA[Given user creates request body for subscription setting unarchive..........passed
-When user sends post request for subscription setting unarchive.............passed
-Then user validates subscription setting not found error with "404" status code for subscription setting unarchive.passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Subscription settings unarchive" name="subscription setting links to organizer" time="1.312">
-        <system-out>
-            <![CDATA[Given user creates request body for subscription setting unarchive..........passed
-When user sends post request for subscription setting unarchive.............passed
-Then user validates subscription setting not link to organizer error with "409" status code for subscription setting unarchive.passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Subscription settings unarchive" name="subscription setting is archived" time="1.23">
-        <system-out>
-            <![CDATA[Given user creates request body for subscription setting unarchive..........passed
-When user sends post request for subscription setting unarchive.............passed
-Then user validates subscription setting is not archived error with "409" status code for subscription setting unarchive.passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Subscription settings unarchive" name="subscription setting unarchive" time="1.126">
-        <failure message="Expected null to be present in listOfArchivedAtField. Actual contents: [2023-12-03T00:00] expected [true] but found [false]" type="java.lang.AssertionError">
-            <![CDATA[Given user creates request body for subscription setting unarchive..........passed
-When user sends post request for subscription setting unarchive.............passed
-Then user validates archive_at to null on core_subscription_settings with "204" status code.failed
-
-StackTrace:
-java.lang.AssertionError: Expected null to be present in listOfArchivedAtField. Actual contents: [2023-12-03T00:00] expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertTrue(Assert.java:43)
-	at stepdefinitions.subscriptions_management_step_defs.SubscriptionUnarchiveStepDefs.user_validates_archive_at_to_null_on_core_subscription_settings_with_status_code(SubscriptionUnarchiveStepDefs.java:135)
-	at ✽.user validates archive_at to null on core_subscription_settings with "204" status code(file:///Users/arslan/Documents/aderman/intellj%20projects/pg_core_api/./src/test/resources/features/subscriptions_management/subscription_setting_unarchive.feature:33)
-]]>
-        </failure>
     </testcase>
 </testsuite>

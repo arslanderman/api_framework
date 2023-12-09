@@ -10,5 +10,8 @@
         <module name="platiniumgroup" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api_framework" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

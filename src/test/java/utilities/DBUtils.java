@@ -26,9 +26,9 @@ public class  DBUtils {
         //    connection : used to connect to DB
         //    statement : used to write queries
         //    resultSet : used to perform DB actions such as going to specific rows, get data as string, get data as object
-        String url = "jdbc:mysql://localhost:8181/prestashop";
-        String username="prestashop";
-        String password="prestashop";
+        String url = "url";
+        String username="your_username";
+        String password="your_password";
         try {
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
@@ -255,12 +255,8 @@ public class  DBUtils {
     }
 
     public static void main(String[] args) throws SQLException {
-       /* createConnection();
-        String query = "select * from core_tag";
-        List<Object> data = getColumnData(query,"name");
-        System.out.println(data);
-        */
-        String pdfFilePath = "/Users/arslan/Downloads/titres_sejour (1).pdf";
+
+        String pdfFilePath = "your_path";
 
 
         try {

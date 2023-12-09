@@ -9,7 +9,7 @@ public class AudienceManagBaseUrlStatic {
 
     public static void audienceManagementSetUp(){
 
-        spec = new RequestSpecBuilder().setBaseUri("http://151.80.82.81").build();
+        spec = new RequestSpecBuilder().setBaseUri("https://reqres.in").build();
     }
 
  */

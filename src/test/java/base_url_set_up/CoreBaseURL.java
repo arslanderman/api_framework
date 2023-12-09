@@ -9,7 +9,7 @@ public class CoreBaseURL {
 
     public void coreSetUp(){
 
-        spec = new RequestSpecBuilder().setBaseUri("http://178.32.169.19").build();
+        spec = new RequestSpecBuilder().setBaseUri("https://reqres.in").build();
 
     }
 
